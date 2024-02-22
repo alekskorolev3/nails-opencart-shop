@@ -127,6 +127,7 @@
                     </a>
                 </li>
                 <li>
+                    
                     <a href="#">
                         <img src="./img/lock.svg" alt="lock">
                     </a>
@@ -135,9 +136,15 @@
         </nav>
     </header>
     <main class="main">
-        <figure class="main-img">
-            <img src="./img/mainIMG.svg" alt="mainIMG">
-        </figure>
+        <button class="main-btn_back">
+            <img src="./img/arrow-left.svg" alt="arrow-left"> вернуться
+        </button>
+        <div class="main-img">
+            <figure class="main-img-container">
+                <figcaption class="main-img__text">RUBBER BASE</figcaption>
+                <img src="./img/mainIMG-2.svg" alt="mainIMG">
+            </figure>
+        </div>
         <div class="main-slider">
             <figure class="slider-elem">
                 <div class="slider-elem__container">
@@ -164,189 +171,157 @@
                 <figcaption class="slider-elem__subtitle">БАЗЫ</figcaption>
             </figure>
         </div>
-        <section class="main-section">
-            <div class="section-title">
-                <h2>новинки</h2>
-            </div>
-            <div class="section-container container-card">
-                <div class="section-card">
-                     <div class="card-img">
-                        <img src="./img/card1.svg" alt="card1">
-                        <div class="card-btns" pos>
-                            <button class="card-btns__more">
-                                подробнее
-                            </button>
-                            <button class="card-btns__lock">
-                                <img src="./img/lock.svg" alt="lock">
-                            </button>
-                        </div>
-                     </div>
-                     <div class="card-description">
-                        <div class="card-description__title">
-                            Сменные файлы для педикюра
-                        </div>
-                        <div class="card-description__subtitle">
-                            Размер: <span>L</span>  диаметр 25 мм 180 грит
-                        </div>
-                        <div class="card-description__price">
-                            550.00 руб.
-                        </div>
-                     </div>
-                </div>
-                <div class="section-card">
-                    <div class="card-img">
-                       <img src="./img/card1.svg" alt="card1">
-                       <div class="card-btns">
-                            <button class="card-btns__more">
-                                подробнее
-                            </button>
-                            <button class="card-btns__lock">
-                                <img src="./img/lock.svg" alt="lock">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-description">
-                       <div class="card-description__title">
-                           Сменные файлы для педикюра
-                       </div>
-                       <div class="card-description__subtitle">
-                           Размер: <span>L</span>  диаметр 25 мм 180 грит
-                       </div>
-                       <div class="card-description__price">
-                           550.00 руб.
-                       </div>
-                    </div>
-               </div>
-                <div class="section-card">
-                    <div class="card-img">
-                     <img src="./img/card1.svg" alt="card1">
-                     <div class="card-btns">
-                        <button class="card-btns__more">
-                            подробнее
-                        </button>
-                        <button class="card-btns__lock">
-                            <img src="./img/lock.svg" alt="lock">
-                        </button>
-                     </div>
-                    </div>           
-                    <div class="card-description">
-                        <div class="card-description__title">
-                            Сменные файлы для педикюра
-                        </div>
-                        <div class="card-description__subtitle">
-                            Размер: <span>L</span>  диаметр 25 мм 180 грит
-                        </div>
-                        <div class="card-description__price">
-                            550.00 руб.
-                        </div>
-                    </div>
-                </div>
-                <div class="section-card">
+        <hr>
+        <div class="main-catalog">
+            <div class="catalog-title">Всего 50 наименований</div>
+            <div class="catalog-container">
+                <div class="catalog-side">
+                    <div class="section-card">
                         <div class="card-img">
-                        <img src="./img/card1.svg" alt="card1">
-                        <div class="card-btns">
-                            <button class="card-btns__more">
-                                подробнее
-                            </button>
-                            <button class="card-btns__lock">
-                                <img src="./img/lock.svg" alt="lock">
-                            </button>
+                           <img src="./img/catalog1.svg" alt="catalog1">
+                           <div class="card-btns">
+                                <button class="card-btns__more">
+                                    подробнее
+                                </button>
+                                <button class="card-btns__lock">
+                                    <img src="./img/lock.svg" alt="lock">
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card-description">
-                        <div class="card-description__title">
-                            Сменные файлы для педикюра
+                        <div class="card-description">
+                            <div class="card-description__category">
+                                Камуфлирующая база
+                            </div>
+                           <div class="card-description__title">
+                               Сменные файлы для педикюра
+                           </div>
+                           <div class="card-description__subtitle">
+                               Размер: <span>L</span>  диаметр 25 мм 180 грит
+                           </div>
+                           <div class="card-description__price">
+                               550.00 руб.
+                           </div>
                         </div>
-                        <div class="card-description__subtitle">
-                            Размер: <span>L</span>  диаметр 25 мм 180 грит
+                   </div>
+                   <div class="section-card">
+                        <div class="card-img">
+                           <img src="./img/catalog1.svg" alt="catalog1">
+                           <div class="card-btns">
+                                <button class="card-btns__more">
+                                    подробнее
+                                </button>
+                                <button class="card-btns__lock">
+                                    <img src="./img/lock.svg" alt="lock">
+                                </button>
+                            </div>
                         </div>
-                        <div class="card-description__price">
-                            550.00 руб.
+                       
+                        <div class="card-description">
+                            <div class="card-description__category">
+                                Камуфлирующая база
+                            </div>
+                           <div class="card-description__title">
+                               Сменные файлы для педикюра
+                           </div>
+                           <div class="card-description__subtitle">
+                               Размер: <span>L</span>  диаметр 25 мм 180 грит
+                           </div>
+                           <div class="card-description__price">
+                               550.00 руб.
+                           </div>
                         </div>
-                    </div>
+                   </div>
                 </div>
-            </div>
-        </section>
-        <section class="main-section">
-            <div class="section-title">
-                <h2>акции</h2>
-            </div>
-            <div class="section-container container-card">
-                <div class="section-card section-card_big">
-                     <div class="card-img">
-                        <img src="./img/img2.svg" alt="img2">
-                        <div class="card-btns">
-                            <button class="card-btns__more">
-                                подробнее
-                            </button>
-                            <button class="card-btns__lock">
-                                <img src="./img/lock.svg" alt="lock">
-                            </button>
-                         </div>
-                     </div>
-                     <div class="card-description">
-                        <div class="card-description__title">
-                            Топовое покрытие GRANI professional
+                <div class="catalog-side" style="justify-content: center;">
+                    <div class="section-card section-card_big" style="flex-direction: row;">
+                        <div class="card-img" style="flex: 1 0 30%;">
+                           <img src="./img/catalog1.svg" alt="catalog1">
+                            <div class="card-btns">
+                                <button class="card-btns__more">
+                                    подробнее
+                                </button>
+                                <button class="card-btns__lock">
+                                    <img src="./img/lock.svg" alt="lock">
+                                </button>
+                            </div>
                         </div>
-                        <div class="card-description__subtitle">
-                            Обхём : 15мл
+                        <div class="card-description" style="flex: 1 0 20%; align-self: center; transform: translateX(-20%);">
+                            <div class="card-description__category">
+                                Камуфлирующая база
+                            </div>
+                           <div class="card-description__title">
+                               Сменные файлы для педикюра
+                           </div>
+                           <div class="card-description__subtitle">
+                               Размер: <span>L</span>  диаметр 25 мм 180 грит
+                           </div>
+                           <div class="card-description__price">
+                               550.00 руб.
+                           </div>
                         </div>
-                        <div class="card-description__price">
-                            750.00 руб.
-                        </div>
-                     </div>
+                   </div>
                 </div>
-                <div class="section-card section-card_big">
-                    <div class="card-img">
-                       <img src="./img/img2.svg" alt="img2">
-                       <div class="card-btns">
-                            <button class="card-btns__more">
-                                подробнее
-                            </button>
-                            <button class="card-btns__lock">
-                                <img src="./img/lock.svg" alt="lock">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-description">
-                       <div class="card-description__title">
-                           Топовое покрытие GRANI professional
-                       </div>
-                       <div class="card-description__subtitle">
-                           Обхём : 15мл
-                       </div>
-                       <div class="card-description__price">
-                           750.00 руб.
-                       </div>
-                    </div>
-               </div>
-               <div class="section-card section-card_big">
-                     <div class="card-img">
-                        <img src="./img/img2.svg" alt="img2">
-                             <div class="card-btns">
-                            <button class="card-btns__more">
-                                подробнее
-                            </button>
-                            <button class="card-btns__lock">
-                                <img src="./img/lock.svg" alt="lock">
-                            </button>
-                        </div>
-                     </div>
                 
-                     <div class="card-description">
-                        <div class="card-description__title">
-                            Топовое покрытие GRANI professional
+                <div class="catalog-side">
+                    <div class="section-card">
+                        <div class="card-img">
+                           <img src="./img/catalog1.svg" alt="catalog1">
+                           <div class="card-btns">
+                                <button class="card-btns__more">
+                                    подробнее
+                                </button>
+                                <button class="card-btns__lock">
+                                    <img src="./img/lock.svg" alt="lock">
+                                </button>
+                            </div>
                         </div>
-                        <div class="card-description__subtitle">
-                            Обхём : 15мл
+                        <div class="card-description">
+                            <div class="card-description__category">
+                                Камуфлирующая база
+                            </div>
+                           <div class="card-description__title">
+                               Сменные файлы для педикюра
+                           </div>
+                           <div class="card-description__subtitle">
+                               Размер: <span>L</span>  диаметр 25 мм 180 грит
+                           </div>
+                           <div class="card-description__price">
+                               550.00 руб.
+                           </div>
                         </div>
-                        <div class="card-description__price">
-                            750.00 руб.
+                   </div>
+                   <div class="section-card">
+                        <div class="card-img">
+                           <img src="./img/catalog1.svg" alt="catalog1">
+                           <div class="card-btns">
+                                <button class="card-btns__more">
+                                    подробнее
+                                </button>
+                                <button class="card-btns__lock">
+                                    <img src="./img/lock.svg" alt="lock">
+                                </button>
+                            </div>
                         </div>
-                     </div>
+                       
+                        <div class="card-description">
+                            <div class="card-description__category">
+                                Камуфлирующая база
+                            </div>
+                           <div class="card-description__title">
+                               Сменные файлы для педикюра
+                           </div>
+                           <div class="card-description__subtitle">
+                               Размер: <span>L</span>  диаметр 25 мм 180 грит
+                           </div>
+                           <div class="card-description__price">
+                               550.00 руб.
+                           </div>
+                        </div>
+                   </div>
                 </div>
+                
             </div>
-        </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="footer-description">Если у Вас возникли вопросы, пожалуйста,<br> свяжитесь с нами:</div>
