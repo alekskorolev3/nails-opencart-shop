@@ -312,11 +312,6 @@ textarea {
 
 /* Глобальная корректировка шрифта */
 
-@media screen and (max-width: 1440px) {
-  * {
-    font-size: 2vw;
-  }
-}
 @media screen and (max-width: 768px) {
   * {
     font-size: 2.5vw;
@@ -878,6 +873,8 @@ body::-webkit-scrollbar {
   position: relative;
   flex: 1 0 20%;
   top: 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .products-card__btns {
@@ -947,18 +944,37 @@ body::-webkit-scrollbar {
 }
 
 .product-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  font-family: "Inter", serif;
 }
 .product-description__category {
+  width: 60%;
 }
 .product-description__title {
+  width: 60%;
+  font-weight: bold;
+  font-size: 1.2em;
+
 }
 .product-description__specification {
+  width: 60%;
+
 }
 .product-description__сompound {
+  width: 60%;
+
 }
 .product-description__сharacteristics {
+  width: 60%;
+
 }
 .product-description__rave {
+  width: 60%;
+  
 }
 .product-description__manufacturer {
+  width: 60%;
 }
