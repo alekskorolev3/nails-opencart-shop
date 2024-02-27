@@ -17,7 +17,7 @@ document.querySelector('.modal-wrapper').addEventListener('click', () => {
 
 document.addEventListener("DOMContentLoaded", function() {
   const carousel = document.querySelector(".carousel");
-  const arrowBtns = document.querySelectorAll(".wrapper i");
+  const arrowBtns = document.querySelectorAll(".wrapper-arrow-icon");
   const wrapper = document.querySelector(".wrapper");
 
   const firstCard = carousel.querySelector(".card");
