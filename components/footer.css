@@ -1,0 +1,130 @@
+/* ---- FOOTER ---- */
+
+.footer {
+    background-color: #000000;
+    padding: 67px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: #ffffff;
+    font-family: "Inter", serif;
+  }
+  
+  
+  
+  .footer-logo {
+    width: 8em;
+  }
+  
+  .footer-logo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-leftside {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .leftside-part {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+  .leftside-part:last-child {
+    gap: 18px;
+  }
+  
+  .navbar-phone a{
+    font-size: 1.18em;
+    font-weight: bold;
+  }
+  .navbar-phone  {
+    margin-bottom: 3px;
+  }
+  
+  .phone-description {
+    color: #B3B3B3;
+    font-size: 0.625em;
+  }
+  .navbar-socials {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 12px;
+    align-items: center;
+  }
+  
+  .social:nth-child(even) {
+    flex: 1 0 75%;
+  }
+  
+  .social:nth-child(odd) {
+    flex: 1 0 15%;
+  }
+  
+  .social a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  
+  }
+  
+  .social a img {
+    width: 1em;
+    height: 1em;
+  }
+  
+  .social a span{
+    font-size: 0.875em;
+  }
+  
+  
+  .addone-info h3{
+    font-size: 1.18em;
+    font-size: bold;
+    margin-bottom: 3px;
+  }
+  
+  .addone-info p{
+    color: #B3B3B3;
+    font-size: 0.625em;
+  }
+  .footer-rightside {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    flex: 1 0 50%;
+    justify-content: space-evenly;
+  }
+  .rightside-part {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .part-title {
+    font-weight: bolder;
+    font-size: 1.125em;
+  }
+  .part-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .part-links a{
+    color: #B3B3B3;
+  
+    font-size: 0.875em;
+  }
+  
+  
+  /* ---- FOOTER END ---- */
+  
