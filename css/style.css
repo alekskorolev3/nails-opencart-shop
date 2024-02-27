@@ -484,28 +484,25 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-.wrapper i {
-  height: 50px;
-  width: 50px;
-  background: rgb(118, 233, 118);
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
+.arrow-container {
+  display: flex;
+  gap: 5px;
   position: absolute;
-  top: 50%;
-  font-size: 1.25 rem;
-  transform: translateY(-50%);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  right: 60px;
+}
+
+.wrapper-arrow-icon {
+  padding: 0 10px;
+  cursor: pointer;
 
 }
 
-.wrapper i:first-child {
+i:first-child {
   left: 22px;
 
 }
 
-.wrapper i:last-child {
+i:last-child {
   right: 22px;
 
 }
@@ -645,6 +642,10 @@ body::-webkit-scrollbar {
 .section-title {
   text-align: center;
   font-weight: 600;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-title h2 {
