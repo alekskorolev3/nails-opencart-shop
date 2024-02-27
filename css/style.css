@@ -769,67 +769,136 @@ body::-webkit-scrollbar {
   text-align: left;
   font-weight: bold;
 }
+
+/* ---- FOOTER ---- */
+
 .footer {
   background-color: #000000;
-  padding: 70px 60px 120px;
+  padding: 67px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  color: white;
-}
-.footer-description {
+  gap: 32px;
+  color: #ffffff;
   font-family: "Inter", serif;
-  font-weight: bold;
-}
-.footer-navbar {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.footer-navbar > span {
-  margin: 24px 0px;
-  font-family: "Inter", serif;
-  font-weight: normal;
 }
 
-.navbar-phone {
-  margin: 36px 0;
+
+
+.footer-logo {
+  width: 8em;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.leftside-part {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.leftside-part:last-child {
+  gap: 18px;
 }
 
 .navbar-phone a{
-  font-family: "Inter", serif;
+  font-size: 1.18em;
   font-weight: bold;
+}
+.navbar-phone  {
+  margin-bottom: 3px;
+}
+
+.phone-description {
+  color: #B3B3B3;
+  font-size: 0.625em;
 }
 .navbar-socials {
   display: flex;
-  flex-direction: column;
-  gap: 41px;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 12px;
+  align-items: center;
 }
-.social {
-  display: flex;
-  align-self: flex-start;
+
+.social:nth-child(even) {
+  flex: 1 0 75%;
+}
+
+.social:nth-child(odd) {
+  flex: 1 0 15%;
 }
 
 .social a {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px;
+
 }
 
-.social a > span:first-child {
+.social a img {
+  width: 1em;
+  height: 1em;
+}
+
+.social a span{
+  font-size: 0.875em;
+}
+
+
+.addone-info h3{
+  font-size: 1.18em;
+  font-size: bold;
+  margin-bottom: 3px;
+}
+
+.addone-info p{
+  color: #B3B3B3;
+  font-size: 0.625em;
+}
+.footer-rightside {
   display: flex;
-  width: 2.1em;
+  flex-wrap: wrap;
+  gap: 45px;
+  flex: 1 0 50%;
+  justify-content: space-evenly;
+}
+.rightside-part {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.part-title {
+  font-weight: bolder;
+  font-size: 1.125em;
+}
+.part-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.social a > span:last-child {
-  font-family: "Inter", serif;
-  font-weight: normal;
+.part-links a{
+  color: #B3B3B3;
+
+  font-size: 0.875em;
 }
 
-.social img {
-  width: 100%;
-  height: auto;
-}
+
+/* ---- FOOTER END ---- */
 
 
 .modal-wrapper {
