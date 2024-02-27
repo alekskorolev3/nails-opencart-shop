@@ -1,0 +1,131 @@
+
+/* -----PRODUCT----- */
+
+.main-product {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product-card {
+    display: flex;
+    font-family: "Inter", serif;
+  }
+  .product-card__containerIMG {
+    position: relative;
+    flex: 1 0 20%;
+  }
+  
+  .products-card__btns {
+    position: relative;
+  }
+  
+  .product-card__containerIMG img {
+    width: 100%;
+    height: auto;
+  }
+  .product-card__containerINFO {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    left: -4em;
+  }
+  .product-card__category {
+  }
+  .product-card__title {
+    font-size: 2.25em;
+    font-weight: bold;
+  }
+  .product-card__capacity {
+    font-size: 1.25em;
+  }
+  
+  .product-card__price {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .product-card__delivery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .product-card__delivery li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .product-card__delivery li span {
+    font-size: 0.875em;
+  }
+  
+  .product-card__delivery img {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    padding: 2px;
+  }
+
+  .product-card__btn {
+    
+    background-color: black;
+    color: white;
+    padding: 16px 26px;
+    align-self: flex-start;
+    font-size: 0.95em;
+    font-weight: bold;
+  }
+  
+  .product-card__manager {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    align-items: center;
+  }
+
+  .product-card__manager span {
+    font-size: 1.25em;
+  }
+
+  .product-card__managerIMG-container {
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-card__managerIMG-container img {
+    height: 2em;
+    width: 2em;
+    padding: 5px;
+  }
+  
+  .product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product-description__category {
+    font-size: 1.125em;
+  }
+  .product-description__title {
+    font-size: 1.375em;
+    font-weight: bold;
+  }
+  .product-description__specification {
+  }
+  .product-description__сompound {
+  }
+  .product-description__сharacteristics {
+  }
+  .product-description__rave {
+  }
+  .product-description__manufacturer {
+  }
+  

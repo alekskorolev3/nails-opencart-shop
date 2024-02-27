@@ -1,0 +1,62 @@
+.main-img__text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-weight: bolder;
+    font-size: 2.8em;
+}
+
+.main-img-container {
+    position: relative;
+}
+
+.main-catalog {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.catalog-title {
+    margin: 42px 40px 58px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.catalog-title__text {
+    text-align: center;
+    font-size: 1.375em;
+}
+
+.catalog-addone {
+    display: flex;
+    justify-content: space-between;
+}
+.catalog-filter {
+    display: flex;
+    align-items: center;
+    font-size: 1em;    
+}
+
+.catalog-filter select {
+    font-size: inherit;
+}
+
+.catalog-filter__btn{
+    font-size: 1.25em;
+}
+
+
+
+.catalog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 40px 40px;
+}
+.catalog-side {
+    flex: 1 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+

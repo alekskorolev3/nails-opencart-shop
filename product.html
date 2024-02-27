@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./components/catalog.css">
+  <link rel="stylesheet" href="./components/modal.css">
+  <link rel="stylesheet" href="./components/product.css">
+
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -35,105 +39,6 @@
 
 <body>
   <div class="wrapper">
-    <div class="modal-wrapper"></div>
-    <div class="modal">
-        <aside class="modal-list">
-            <ul>
-                <li><a href="#">Базы</a></li>
-                <li><a href="#">Топы</a></li>
-                <li><a href="#">Гели</a></li>
-                <li><a href="#">Жидкие гели</a></li>
-                <li><a href="#">Гель-лак</a></li>
-                <li><a href="#">Сменные файлы</a></li>
-                <li><a href="#">Подготовка НП</a></li>
-                <li><a href="#">Дизайны</a></li>
-                <li><a href="#">Новинки</a></li>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">Доставка и возврат</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </aside>
-        <footer class="footer">
-            <div class="footer-description">Если у Вас возникли вопросы, пожалуйста,<br> свяжитесь с нами:</div>
-            <nav class="footer-navbar">
-                <div class="navbar-phone">
-                    <a href="tel:+375292912432">+375292912432</a>
-                </div>
-                <ul class="navbar-socials">
-                    <li class="social">
-                        <a href="#">
-                            <span>
-                                <img src="./img/telegram-black.svg" alt="telegram">
-                            </span>
-                            <span>Telegram</span>
-                        </a>
-                    </li>
-                    <li class="social">
-                        <a href="#">
-                            <span>
-                                <img src="./img/whatsaspp-black.svg" alt="whatsaspp">
-                            </span>
-                            <span>WhatsApp</span>
-                        </a>
-                    </li>
-                    <li class="social">
-                        <a href="#">
-                            <span>
-                                <img src="./img/viber-black.svg" alt="viber">
-                            </span>   
-                            <span>Viber</span>
-                        </a>
-                    </li>
-                    <li class="social">
-                        <a href="#">
-                            <span>
-                                <img src="./img/mail-black.svg" alt="mail">
-                            </span>   
-                            <span>Nick-name98@mail.ru</span>
-                        </a>
-                    </li>
-                </ul>
-                <span>Следите за нами в социальных сетях:</span>
-                <div class="social">
-                    <a href="#">
-                        <img src="./img/instagram-black.svg" alt="instagram">
-                        <span>Instagram</span>
-                    </a>
-                </div>
-            </nav>
-        </footer>
-    </div>
-    <header class="header">
-        <div class="header-burger">
-            <div class="burger-icon" >
-                <img src="./img/burger.svg" alt="burger">
-            </div>
-        </div>
-        <div class="header-logo">
-            <div class="logo-container">
-                <img src="./img/GRANI.svg" alt="GRANI">
-            </div>
-        </div>
-        <nav class="header-navbar">
-            <ul class="header-navbar__list">
-                <li>
-                    <a href="#">
-                        <img src="./img/phone.svg" alt="phone">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/default-avatar.svg" alt="default-avatar">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/lock.svg" alt="lock">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
     <main class="main">
         <button class="main-btn_back">
             <img src="./img/arrow-left.svg" alt="arrow-left"> вернуться
@@ -142,11 +47,6 @@
             <div class="product-card">
                 <div class="product-card__containerIMG">
                     <img src="./img/product.svg" alt="product">
-                    <div class="card-btns">
-                        <button class="card-btns__lock">
-                            <img src="./img/lock.svg" alt="lock">
-                        </button>
-                    </div>
                 </div>
                 <div class="product-card__containerINFO">
                     <div class="product-card__category">
@@ -163,17 +63,22 @@
                     </div>
                     <ul class="product-card__delivery">
                         <li>
-                            <img src="./img/delivery1.svg" alt="delivery1">Бесплатная доставка от 3000 руб
+                            <img src="./img/delivery1.svg" alt="delivery1">
+                            <span>Бесплатная доставка от 3000 руб</span>
                         </li>
                         <li>
-                            <img src="./img/delivery2.svg" alt="delivery2">Гарантия качества продукции
+                            <img src="./img/delivery2.svg" alt="delivery2">
+                            <span>Гарантия качества продукции</span>
                         </li>
                     </ul>
+                    <button class="product-card__btn">
+                        Добавить в корзину
+                    </button>
                     <div class="product-card__manager">
                         <div class="product-card__managerIMG-container">
                             <img src="./img/phone-white.svg" alt="phone">
                         </div>
-                        Связаться с менеджером
+                       <span> Связаться с менеджером</span>
                     </div>
                 </div>
             </div>
@@ -207,159 +112,7 @@
                 </div>
             </div>
         </section>
-        <section class="main-section">
-            <div class="section-title">
-                <h2>Похожие товары</h2>
-            </div>
-            <div class="section-container container-card">
-                <div class="section-card">
-                     <div class="card-img">
-                        <img src="./img/card1.svg" alt="card1">
-                        <div class="card-btns" pos>
-                            <button class="card-btns__more">
-                                подробнее
-                            </button>
-                            <button class="card-btns__lock">
-                                <img src="./img/lock.svg" alt="lock">
-                            </button>
-                        </div>
-                     </div>
-                     <div class="card-description">
-                        <div class="card-description__title">
-                            Сменные файлы для педикюра
-                        </div>
-                        <div class="card-description__subtitle">
-                            Размер: <span>L</span>  диаметр 25 мм 180 грит
-                        </div>
-                        <div class="card-description__price">
-                            550.00 руб.
-                        </div>
-                     </div>
-                </div>
-                <div class="section-card">
-                    <div class="card-img">
-                       <img src="./img/card1.svg" alt="card1">
-                       <div class="card-btns">
-                            <button class="card-btns__more">
-                                подробнее
-                            </button>
-                            <button class="card-btns__lock">
-                                <img src="./img/lock.svg" alt="lock">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-description">
-                       <div class="card-description__title">
-                           Сменные файлы для педикюра
-                       </div>
-                       <div class="card-description__subtitle">
-                           Размер: <span>L</span>  диаметр 25 мм 180 грит
-                       </div>
-                       <div class="card-description__price">
-                           550.00 руб.
-                       </div>
-                    </div>
-               </div>
-                <div class="section-card">
-                    <div class="card-img">
-                     <img src="./img/card1.svg" alt="card1">
-                     <div class="card-btns">
-                        <button class="card-btns__more">
-                            подробнее
-                        </button>
-                        <button class="card-btns__lock">
-                            <img src="./img/lock.svg" alt="lock">
-                        </button>
-                     </div>
-                    </div>           
-                    <div class="card-description">
-                        <div class="card-description__title">
-                            Сменные файлы для педикюра
-                        </div>
-                        <div class="card-description__subtitle">
-                            Размер: <span>L</span>  диаметр 25 мм 180 грит
-                        </div>
-                        <div class="card-description__price">
-                            550.00 руб.
-                        </div>
-                    </div>
-                </div>
-                <div class="section-card">
-                        <div class="card-img">
-                        <img src="./img/card1.svg" alt="card1">
-                        <div class="card-btns">
-                            <button class="card-btns__more">
-                                подробнее
-                            </button>
-                            <button class="card-btns__lock">
-                                <img src="./img/lock.svg" alt="lock">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="card-description">
-                        <div class="card-description__title">
-                            Сменные файлы для педикюра
-                        </div>
-                        <div class="card-description__subtitle">
-                            Размер: <span>L</span>  диаметр 25 мм 180 грит
-                        </div>
-                        <div class="card-description__price">
-                            550.00 руб.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
-    <footer class="footer">
-        <div class="footer-description">Если у Вас возникли вопросы, пожалуйста,<br> свяжитесь с нами:</div>
-        <nav class="footer-navbar">
-            <div class="navbar-phone">
-                <a href="tel:+375292912432">+375292912432</a>
-            </div>
-            <ul class="navbar-socials">
-                <li class="social">
-                    <a href="#">
-                        <span>
-                            <img src="./img/telegram.svg" alt="telegram">
-                        </span>
-                        <span>Telegram</span>
-                    </a>
-                </li>
-                <li class="social">
-                    <a href="#">
-                        <span>
-                            <img src="./img/whatsaspp.svg" alt="whatsaspp">
-                        </span>
-                        <span>WhatsApp</span>
-                    </a>
-                </li>
-                <li class="social">
-                    <a href="#">
-                        <span>
-                            <img src="./img/viber.svg" alt="viber">
-                        </span>   
-                        <span>Viber</span>
-                    </a>
-                </li>
-                <li class="social">
-                    <a href="#">
-                        <span>
-                            <img src="./img/mail.svg" alt="mail">
-                        </span>   
-                        <span>Nick-name98@mail.ru</span>
-                    </a>
-                </li>
-            </ul>
-            <span>Следите за нами в социальных сетях:</span>
-            <div class="social">
-                <a href="#">
-                    <img src="./img/instagram.svg" alt="instagram">
-                    <span>Instagram</span>
-                </a>
-            </div>
-        </nav>
-    </footer>
   </div>
   <script src="js/app.js"></script>
 </body>

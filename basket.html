@@ -1,0 +1,239 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./components/basket.css">
+  <link rel="stylesheet" href="./components/modal.css">
+  
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+
+  <!-- Fonts -->
+  <!-- jacques -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet">
+
+  <!-- INTER -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- ALMARAI -->
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="basket">
+                <div class="basket-leftside">
+                    <div class="basket-title">
+                        <h2>Корзина</h2>
+                    </div>
+                    <div class="basket-btns">
+                        <button class="catalog-filter__btn">
+                            <img src="./img/arrow-left.svg" alt="arrow-left"> вернуться
+                        </button>
+                        <button>
+                            Удалить все
+                        </button>
+                    </div>
+                    <hr>
+                    <div class="basket-cards">
+                        <div class="basket-card">
+                            <div class="basket-card__IMGcontainer">
+                                <img src="./img/card1.svg" alt="card1" >
+                            </div>
+                            <div class="basket-card-main card-description">
+                                <div class="card-description-inner">
+                                    <div class="card-description__category">
+                                        Камуфлирующая база
+                                    </div>
+                                    <div class="card-description__title">
+                                        ART BASE  LIGHT GREEN
+                                    </div>
+                                    <div class="card-description__subtitle">
+                                        Объём: 15 мл
+                                    </div>
+                                </div>
+                                <div class="card-price-container">
+                                    <div class="card-description__price">
+                                        750.00 руб
+                                    </div>
+                                    <button class="card-btns__more">
+                                        -
+                                    </button>
+                                    <button class="card-btns__more">
+                                        +
+                                    </button>
+                                    <button class="card-btns__more">
+                                        1
+                                    </button>
+                                    <div class="basket-card-result">
+                                        <div class="card-description__price">
+                                            750.00 руб
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>                   
+                            <button class="basket-card__close">
+                                <img src="./img/cross-basket-card.svg" alt="cross-basket-card">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="basket-rightside">
+                    <div class="basket-rightside-description">
+                        <div class="basket-rightside-property basket-rightside__payment">
+                            <span>К оплате</span>
+                            <span>2400.00 руб</span>
+                        </div>
+                        <div class="basket-rightside-property basket-rightside__products">
+                            <span>Всего товаров</span>
+                            <span>3 шт.</span>
+                        </div>
+                        <div class="basket-rightside-property basket-rightside__discount">
+                            <span>Скидка</span>
+                            <span>200.00 руб</span>
+                        </div>
+                        <div class="basket-rightside-property basket-rightside__bonus">
+                            <span>Начисленно бонусов</span>
+                            <span>200.00 руб</span>
+                        </div>
+                        <div class="basket-rightside-property basket-rightside__delivery">
+                            <span>Доставка бесплатно</span>
+                            <span>Нет</span>
+                        </div>
+                        <div class="basket-rightside-property basket-rightside__deliveryPoint">
+                            <button>До пункта</button>
+                        </div>
+                        <div class="basket-rightside-property basket-rightside__deliveryDoor">
+                            <button>До двери</button>
+                            
+                        </div>
+                    </div>
+                    <div class="basket-rightside-button">
+                        <button>
+                            Оплатить <img src="./img/payment.svg" alt="payment">
+                        </button>
+                    </div>
+                </div>  
+
+            </div>
+            <hr class="basket-hr">
+            <div class="basket-promo">
+                <div class="basket-promo__title">Промокод</div>
+                <div class="basket-promo__helper">
+                    <img src="./img/helper.svg" alt="helper">
+                </div>
+                <form action="">
+                    <input placeholder="Введите промокод" type="text">
+                    <button>Применить</button>
+                </form>
+            </div>
+            <hr class="basket-hr">
+            <div class="basket-delivery">
+                <div class="basket-delivery__title">Доставка</div>
+                <div class="basket-delivery__subitle">Для доставки по России и странам СНГ, заполните форму ниже</div>
+                <from class="basket-delivery-form">
+                    <label for="fio">
+                        <span>ФИО</span>
+                        <input id='fio' name="fio" type="text">
+                    </label>
+                    <label for="address">
+                        <span>Город улица, дом</span>
+                        <input id="address" name="address" type="text">
+                    </label>
+                    <div>
+                        <label for="home">
+                            <span>Квартира</span>
+                            <input id="home" name="home" type="text">
+                        </label>
+                        <label for="phone">
+                            <span>Телефон</span>
+                            <input id="phone" name="phone" type="text">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="tk">
+                            <span>Выбрать ТК</span>
+                            <select name="tk" id="tk">
+                                <option value="" selected disabled>Выберте из списка</option>
+                                <option value=".">.</option>
+                                <option value="(.)">(.)</option>
+                                <option value="( . )">( . )</option>
+                                <option value="СДЕК">СДЕК</option>
+                            </select>
+                        </label>
+                        <label for="email">
+                            <span>Электронная почта</span>
+                            <input name="email" id="email" type="text">
+                        </label>
+                    </div>
+                    <label for="deliveryChoose">
+                        <input type="radio" name="deliveryChoose" id="point">
+                        <span>
+                            Доставка до пункта выдачи, только по России и странам СНГ
+                            мы доставим в ближайший пункт выдачи к указанному адресу, бесплатно, при заказе от 3000 руб.
+                        </span>
+                    </label>
+                    <label for="door">
+                        <input type="radio" name="deliveryChoose" id="door">
+                        <span>
+                            Доставка до двери, только по России и странам СНГ
+                            бесплатно, при заказе от 3000 руб.
+                        </span>
+                    </label>
+                    <div class="basket-delivery-form__addone">
+                        <span>
+                            Для доставки в дальнее зарубежье, либо по иным вопросам доставки,
+                            пожалуйста, свяжитесь с нами
+                        </span>
+                        <img src="./img/phone-white.svg" alt="">
+                    </div>
+                    <button>Подтвердить данные</button>
+                </from>
+            </div>
+            <hr class="basket-hr"> 
+            <div class="basket-payment">
+                <div class="basket-payment__title"></div>
+                <label class="basket-payment-list" for="payment">
+                    <ul>
+                        <li>
+                            <input type="radio" name="payment" id="">
+                            <img src="./img/payment.svg" alt="payment">
+                            <span>Онлайн оплата  банковской картой на сайте</span>
+                        </li>
+                        <li>
+                            <input type="radio" name="payment" id="">
+                            <img src="./img/payment.svg" alt="payment">
+                            <span>Онлайн оплата  банковской картой на сайте</span>
+                        </li>
+                        <li>
+                            <input type="radio" name="payment" id="">
+                            <img src="./img/payment.svg" alt="payment">
+                            <span>Онлайн оплата  банковской картой на сайте</span>
+                        </li>
+                    </ul>
+                </label>
+            </div>
+        </main>
+    </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
