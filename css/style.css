@@ -76,19 +76,6 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
 fieldset {
   border: 0;
   margin: 0;
@@ -480,6 +467,7 @@ body::-webkit-scrollbar {
   padding: 32px 50px;
   justify-content: center;
   font-size: 0.85em;
+  width: 100%;
 }
 
 
@@ -1074,6 +1062,10 @@ i:last-child {
     display: none;
   }
 
+  .footer_inner_container {
+    padding: 32px;
+  }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -1174,6 +1166,10 @@ i:last-child {
     padding: 32px 12px;
   }
 
+  .footer_inner_container {
+    padding: 12px;
+  }
+
   .navbar-socials {
     display: flex;
     align-items: flex-start;
@@ -1193,5 +1189,13 @@ i:last-child {
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-top: 24px;
+  }
+
+  .social:nth-child(even) {
+    flex: 1 0 0;
+  }
+
+  .social:nth-child(odd) {
+    flex: 1 0 0;
   }
 }
