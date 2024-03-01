@@ -317,7 +317,7 @@ textarea {
   border: none;
   outline: none;
   background: none;
-  font-size: 1vw;
+  /*font-size: 1vw;*/
   line-height: 1em;
 }
 
@@ -423,6 +423,7 @@ body::-webkit-scrollbar {
   width: 7em;
   height: auto;
   cursor: pointer;
+  max-width: 112px;
 }
 
 .header-navbar {
@@ -466,6 +467,8 @@ body::-webkit-scrollbar {
 .main-img img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  max-height: 360px;
 }
 .main-slider {
   gap: 17px;
@@ -603,7 +606,7 @@ i:last-child {
   transition: all 0.2s linear;
 }
 .slider-elem__subtitle {
-  font-size: 1em;
+  font-size: 1.15em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -623,6 +626,7 @@ i:last-child {
 }
 
 .section-title {
+  position: relative;
   text-align: center;
   font-weight: 600;
   display: flex;
@@ -632,7 +636,7 @@ i:last-child {
 }
 
 .section-title h2 {
-  font-size: 1.8em;
+  font-size: min(1.8em, 36px);
   font-weight: 600;
 }
 
@@ -648,7 +652,6 @@ i:last-child {
   display: flex;
   flex-direction: column;
   flex: 1 0 0;
-  min-width: 14em;
   align-self: flex-start;
   gap: 12px;
   align-items: flex-start;
@@ -719,6 +722,15 @@ i:last-child {
   height: inherit;
 }
 
+.section-card_big .card-description__category {
+  font-size: min(20px, 1.1em);
+}
+
+.section-card_big .card-description__title {
+  font-size: min(28px, 1.25em)
+}
+
+
 
 .card-description {
   display: flex;
@@ -746,6 +758,7 @@ i:last-child {
 .card-description__title {
   font-weight: bold;
   transition: 0.3s ease all;
+  font-size: min(1em, 20px);
 }
 
 .card-description__category,
@@ -891,10 +904,8 @@ i:last-child {
 }
 .footer-rightside {
   display: flex;
-  flex-wrap: wrap;
   gap: 45px;
   flex: 1 0 50%;
-  justify-content: space-evenly;
 }
 .rightside-part {
   display: flex;
@@ -1024,10 +1035,20 @@ i:last-child {
   align-items: flex-start;
 }
 
+@media screen and (min-width: 1920px) {
+  .main-slider {
+    font-size: 0.75em;
+  }
+}
+
 @media screen and (max-width: 1440px) {
 
 }
 @media screen and (max-width: 768px) {
+
+  .main-img img {
+    max-height: 160px;
+  }
 
   .section-card_big {
     min-width: unset;
@@ -1042,7 +1063,7 @@ i:last-child {
   }
 
   .main-slider {
-    font-size: 0.65em;
+    font-size: 0.85em;
     justify-content: unset;
     padding: 24px 32px;
   }
@@ -1078,7 +1099,10 @@ i:last-child {
 @media screen and (max-width: 1100px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 22px);
+  }
 
+  .main-slider {
+    justify-content: unset!important;
   }
 }
 

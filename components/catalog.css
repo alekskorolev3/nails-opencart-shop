@@ -1,9 +1,15 @@
 .main-img__text {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  width: 100%;
+  max-width: 1520px;
+  text-align: end;
   font-weight: bolder;
-  font-size: 2.8em;
+  font-size: 2.5em;
+  left: 0;
+  right: 60px;
+  bottom: 60px;
+  margin: 0 auto;
+  padding-right: 90px;
 }
 
 .main-img-container {
@@ -13,12 +19,12 @@
 .main-catalog {
   display: flex;
   flex-direction: column;
-  max-width: 1460px;
+  max-width: 1680px;
   width: 100%;
 }
 
 .catalog-title {
-  margin: 42px 40px 58px;
+  margin: 42px 80px 58px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -27,7 +33,7 @@
 
 .catalog-title__text {
   text-align: center;
-  font-size: 1.375em;
+  font-size: 1em;
 }
 
 .catalog-addone {
@@ -35,10 +41,24 @@
   justify-content: space-between;
 }
 
+.catalog-addone a {
+  text-decoration-color: unset;
+}
+
 .catalog-filter {
   display: flex;
   align-items: center;
   font-size: 1em;
+  gap: 4px;
+}
+
+.catalog-filter select {
+  font-family: "Involve", sans-serif;
+  font-size: min(0.9em, 18px) !important;
+}
+
+.catalog-filter span {
+  font-size: min(0.9em, 18px);
 }
 
 .catalog-filter select {
@@ -46,21 +66,188 @@
 }
 
 .catalog-filter__btn {
-  font-size: 1.25em;
+  font-size: min(0.9em, 18px)
 }
 
 
 .catalog-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  margin: 0px 40px 40px;
+  gap: 60px;
+  margin: 0px 80px 80px;
 }
 
 .catalog-side {
-  flex: 1 0 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 60px;
 }
 
+.grid-view {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2.2fr;
+  gap: 60px;
+}
+
+.grid-view2 {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr;
+  gap: 60px;
+}
+
+.section-card {
+  align-self: stretch;
+}
+
+.main-catalog .section-card .card-img {
+  height: 100%;
+  max-height: 350px;
+}
+
+.main-catalog .card-img img {
+  min-height: unset;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 1110px) {
+  .catalog-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .catalog-container {
+    gap: 40px;
+    margin: 0 40px 40px;
+  }
+
+  .catalog-title {
+    margin: 42px 40px 58px;
+  }
+
+  .main-slider {
+    padding: 32px 30px;
+  }
+
+  .main-img__text {
+    font-size: 2.5em;
+    padding-right: 48px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .catalog-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .main-img__text {
+    font-size: 2em;
+    text-align: left;
+    padding-left: 12px;
+    padding-right: 0;
+    bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .catalog-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .main-slider {
+    padding: 0 12px;
+  }
+
+  .catalog-title {
+    margin: 12px;
+  }
+
+  .catalog-container {
+    gap: 24px;
+    margin: 0 0 32px;
+  }
+
+  .section-card {
+    font-size: 3vw;
+    align-self: stretch;
+  }
+
+  .card-description {
+    position: relative;
+  }
+
+  .card-description__title {
+    font-size: 3.4vw;
+  }
+
+  .card-description__subtitle {
+    font-size: 3vw;
+  }
+
+  .card-description__price {
+    font-size: 3.4vw;
+  }
+
+
+  .card-price-container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+
+  .main-img img {
+    object-fit: cover;
+    min-height: 140px;
+  }
+
+  .main-img__text {
+    font-size: 1.5em;
+  }
+
+  .catalog-filter__btn {
+    position: absolute;
+    top: 12px;
+  }
+
+  .catalog-title {
+    gap: 18px;
+  }
+
+  .catalog-addone {
+    justify-content: flex-start;
+  }
+
+  .catalog-side .section-card:first-child{
+    grid-column-start: span 2;
+  }
+
+  .catalog-side .section-card:nth-child(5n + 1) {
+    grid-column-start: span 2;
+    gap: 24px;
+  }
+
+  .catalog-side .section-card:nth-child(5n + 1) .card-description__title {
+    font-size: 4.2vw;
+  }
+
+  .catalog-side .section-card:nth-child(5n + 1) .card-description__subtitle {
+    font-size: 3.4vw;
+  }
+
+  .catalog-side .section-card:nth-child(5n + 1) .card-description__price {
+    font-size: 4.2vw;
+  }
+
+  .catalog-side .section-card:nth-child(5n + 1) .card-btns__more {
+    position: absolute;
+    top: -36px;
+  }
+
+
+}

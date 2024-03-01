@@ -1,4 +1,11 @@
 
+// function catalog() {
+//   if (window.innerWidth > 1024) {
+//     document.querySelector('.catalog-container').appendChild()
+//   }
+// }
+
+
 document.querySelector('.burger').addEventListener('click', () => {
     const burger = document.querySelector('.burger')
     burger.classList.toggle('toggle')

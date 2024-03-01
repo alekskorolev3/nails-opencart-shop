@@ -9,12 +9,12 @@
     transition: all 0.5s linear;
     z-index: -100;
   }
-  
+
   .activeWrapper {
     opacity: 1;
     z-index: 100;
   }
-  
+
   .modal {
     top: 50px;
     bottom: 0;
@@ -33,27 +33,27 @@
     overflow-x: hidden;
     padding: 32px 32px 32px 60px;
   }
-  
+
   .active {
     display: flex;
     transform: translateX(0px);
   }
-  
+
   .modal-list {
     margin-bottom: 20px;
   }
-  
+
   .modal-list ul{
     display: flex;
     flex-direction: column;
     gap: 12px;
   }
-  
+
   .modal-list a {
     color: black;
     font-family: "Inter";
   }
-  
+
   .modal .footer {
     background-color: #ffffff;
     color: black;
@@ -78,4 +78,9 @@
   .modal .navbar-social {
     align-items: flex-start;
   }
-  
+
+  @media screen and (max-width: 480px) {
+    .modal {
+      padding: 32px 12px 12px 20px;
+    }
+  }
