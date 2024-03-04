@@ -813,6 +813,7 @@ i:last-child {
   font-family: "Inter", serif;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .footer_inner_container {
@@ -824,6 +825,8 @@ i:last-child {
   color: #ffffff;
   width: 100%;
 }
+
+
 
 
 
@@ -945,6 +948,65 @@ i:last-child {
 
   font-size: 0.875em;
 }
+
+.footer > hr {
+  border-top-color: #615F5F;
+}
+
+.footer-additionally {
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  padding: 67px;
+
+}
+
+
+.footer-additionally__quickInfo {
+  color: #615F5F;
+  font-size: 0.8em;
+}
+.footer-additionally-paymentMethods {
+  display: flex;
+  gap: 92px;
+  flex-wrap: wrap;
+}
+.footer-additionally-paymentMethods__elem {
+  max-width: 4em;
+}
+
+.footer-additionally-paymentMethods__elem img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-rightside {
+    flex-direction: column;
+  }
+  .footer-additionally {
+    padding: 32px
+  }
+
+  .footer-additionally-paymentMethods {
+    gap: 46px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-additionally {
+    padding: 12px
+  }
+
+  .footer-additionally-paymentMethods {
+    gap: 10px;
+  }
+
+  .footer-rightside {
+    flex-direction: row;
+  }
+}
+
 
 
 /* ---- FOOTER END ---- */
