@@ -749,6 +749,7 @@ i:last-child {
   justify-content: space-between;
   width: 100%;
   align-items: center;
+
 }
 
 .card-description-title-container .card-description__title {
@@ -994,6 +995,13 @@ i:last-child {
 }
 
 @media screen and (max-width: 480px) {
+
+  .card-description-title-container {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
   .footer-additionally {
     padding: 12px
   }
