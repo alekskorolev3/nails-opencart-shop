@@ -5,41 +5,6 @@
 //   }
 // }
 
-
-document.querySelector('.burger').addEventListener('click', () => {
-    const burger = document.querySelector('.burger')
-    burger.classList.toggle('toggle')
-    const modal = document.querySelector('.modal')
-    const modalWrapper = document.querySelector('.modal-wrapper')
-    modal.classList.toggle('active')
-    modalWrapper.classList.toggle('activeWrapper')
-})
-
-document.querySelector('.modal-wrapper').addEventListener('click', () => {
-    const modal = document.querySelector('.modal')
-    const modalWrapper = document.querySelector('.modal-wrapper')
-    modal.classList.toggle('active')
-    modalWrapper.classList.toggle('activeWrapper')
-})
-
-let reaction = document.querySelector('.reaction')
-let options = {
-  root: reaction,
-  rootMargin: "0px",
-  threshold: 1.0,
-};
-let callback = function (entries, observer) {
-  let button = document.querySelector('.basket-rightside-button')
-  if (entries[0].isIntersecting) {
-    button.classList.remove('move-button')
-  }
-  else {
-    if (entries[0].boundingClientRect.top > 0) button.classList.add('move-button') 
-  }
-};
-let observer = new IntersectionObserver(callback);
-observer.observe(reaction)
-
 document.addEventListener("DOMContentLoaded", function() {
   const carousel = document.querySelector(".carousel");
   const arrowBtns = document.querySelectorAll(".wrapper-arrow-icon");
@@ -202,3 +167,39 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+document.querySelector('.burger').addEventListener('click', () => {
+    const burger = document.querySelector('.burger')
+    burger.classList.toggle('toggle')
+    const modal = document.querySelector('.modal')
+    const modalWrapper = document.querySelector('.modal-wrapper')
+    modal.classList.toggle('active')
+    modalWrapper.classList.toggle('activeWrapper')
+})
+
+document.querySelector('.modal-wrapper').addEventListener('click', () => {
+    const modal = document.querySelector('.modal')
+    const modalWrapper = document.querySelector('.modal-wrapper')
+    modal.classList.toggle('active')
+    modalWrapper.classList.toggle('activeWrapper')
+})
+
+let reaction = document.querySelector('.reaction')
+let options = {
+  root: reaction,
+  rootMargin: "0px",
+  threshold: 1.0,
+};
+let callback = function (entries, observer) {
+  let button = document.querySelector('.basket-rightside-button')
+  if (entries[0].isIntersecting) {
+    button.classList.remove('move-button')
+  }
+  else {
+    if (entries[0].boundingClientRect.top > 0) button.classList.add('move-button')
+  }
+};
+let observer = new IntersectionObserver(callback);
+observer.observe(reaction)
+
+
