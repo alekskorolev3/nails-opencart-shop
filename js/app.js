@@ -22,6 +22,24 @@ document.querySelector('.modal-wrapper').addEventListener('click', () => {
     modalWrapper.classList.toggle('activeWrapper')
 })
 
+let reaction = document.querySelector('.reaction')
+let options = {
+  root: reaction,
+  rootMargin: "0px",
+  threshold: 1.0,
+};
+let callback = function (entries, observer) {
+  let button = document.querySelector('.basket-rightside-button')
+  if (entries[0].isIntersecting) {
+    button.classList.remove('move-button')
+  }
+  else {
+    if (entries[0].boundingClientRect.top > 0) button.classList.add('move-button') 
+  }
+};
+let observer = new IntersectionObserver(callback);
+observer.observe(reaction)
+
 document.addEventListener("DOMContentLoaded", function() {
   const carousel = document.querySelector(".carousel");
   const arrowBtns = document.querySelectorAll(".wrapper-arrow-icon");
