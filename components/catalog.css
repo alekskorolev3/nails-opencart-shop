@@ -109,34 +109,36 @@
   height: 100%;
 }
 
-.catalog-side .section-card:nth-child(11n + 3) {
-  grid-column-start: span 2;
-  gap: 24px;
-  flex-direction: row;
-  flex: 1 0 0;
-}
+@media screen and (min-width: 486px) {
+  .catalog-side .section-card:nth-child(11n + 3) {
+    grid-column-start: span 2;
+    gap: 24px;
+    flex-direction: row;
+    flex: 1 0 0;
+  }
 
-.catalog-side .section-card:nth-child(11n + 3) .card-img {
-  flex: 1 0 30%;
-  max-height: unset;
-}
+  .catalog-side .section-card:nth-child(11n + 3) .card-img {
+    flex: 1 0 30%;
+    max-height: unset;
+  }
 
-.catalog-side .section-card:nth-child(11n + 3) .card-img img{
-  max-height: unset;
-}
+  .catalog-side .section-card:nth-child(11n + 3) .card-img img{
+    max-height: unset;
+  }
 
-.catalog-side .section-card:nth-child(11n + 3) .card-description {
-  flex: 1 0 20%;
-  align-self: center;
-  transform: translateX(-12%);
-}
+  .catalog-side .section-card:nth-child(11n + 3) .card-description {
+    flex: 1 0 20%;
+    align-self: center;
+    transform: translateX(-12%);
+  }
 
-.catalog-side .section-card:nth-child(11n + 3) .card-description__title{
-  font-size: min(1.5em, 22px)
-}
+  .catalog-side .section-card:nth-child(11n + 3) .card-description__title{
+    font-size: min(1.5em, 22px)
+  }
 
-.catalog-side .section-card:nth-child(11n + 3) .card-description__price{
-  font-size: min(1.5em, 22px)
+  .catalog-side .section-card:nth-child(11n + 3) .card-description__price{
+    font-size: min(1.5em, 22px)
+  }
 }
 
 
