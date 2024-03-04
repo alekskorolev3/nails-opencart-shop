@@ -564,11 +564,6 @@
 </footer>
 <script>
   let reaction = document.querySelector('.reaction')
-  let options = {
-    root: reaction,
-    rootMargin: "0px",
-    threshold: 1.0,
-  };
   let callback = function (entries, observer) {
     let button = document.querySelector('.basket-rightside-button')
     if (entries[0].isIntersecting) {
@@ -581,6 +576,7 @@
   let observer = new IntersectionObserver(callback);
   observer.observe(reaction)
 </script>
+<script src="./js/app.js"></script>
 </body>
 
 </html>
