@@ -688,7 +688,11 @@ i:last-child {
 .card-img img {
   width: 100%;
   height: auto;
+  max-height: 280px;
+  min-height: 280px;
+  object-fit: cover;
 }
+
 .card-btns {
   position: relative;
   flex: 1 0 0;
@@ -739,6 +743,20 @@ i:last-child {
   align-items: flex-start;
   width: 100%;
 }
+
+.card-description-title-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.card-description-title-container .card-description__title {
+  max-width: 70%;
+  word-break: break-word;
+}
+
+
 
 .card-description-inner {
   display: flex;
@@ -904,7 +922,7 @@ i:last-child {
 }
 .footer-rightside {
   display: flex;
-  gap: 45px;
+  gap: 80px;
   flex: 1 0 50%;
 }
 .rightside-part {
