@@ -131,8 +131,20 @@
   transform: translateX(-12%);
 }
 
-.catalog-side .section-card:nth-child(11n + 3) .card-description__price, .card-description__title{
-  font-size: min(1.2em, 25px)
+.catalog-side .section-card:nth-child(11n + 3) .card-description__title{
+  font-size: min(1.5em, 22px)
+}
+
+.catalog-side .section-card:nth-child(11n + 3) .card-description__price{
+  font-size: min(1.5em, 22px)
+}
+
+
+
+.catalog-side .section-card:nth-child(11n + 3) .card-price-container {
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
 }
 
 .catalog-side .section-card:first-child{
