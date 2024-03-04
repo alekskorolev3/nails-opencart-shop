@@ -360,9 +360,11 @@ label.labelRadio input {
 .basket-rightside-button {
     display: flex;
     justify-content: center;
+    padding: 0 12px;
     align-items: center;
     flex: 1 0 0;
     margin-bottom: 10px;
+    background-color: #fff;
 }
 
 .basket-rightside-button button {
@@ -389,6 +391,10 @@ label.labelRadio input {
 
 hr.noneHR {
     margin: 10px 0;
+}
+
+.basket-rightside-button > span:first-child{
+    display: none;
 }
 
 @media screen and (max-width: 768px){
@@ -493,6 +499,22 @@ hr.noneHR {
     .basket-payment-list ul li{
         gap: 15px;
     }
+
+    .move-button {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: fit-content;
+        width: 100%;
+        margin: 0;
+        padding: 10px 32px;
+        justify-content: space-between;
+    }
+
+    .move-button > span:first-child {
+        display: flex;
+        font-weight: bolder;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -536,5 +558,9 @@ hr.noneHR {
 
     .basket-rightside-description {
         margin: 0 0 20px;
+    }
+
+    .move-button {
+        padding: 10px 12px;
     }
 }
