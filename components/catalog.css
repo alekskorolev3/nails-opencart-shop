@@ -52,7 +52,6 @@
 .catalog-title__text {
   text-align: center;
   font-size: 1.3em;
-  letter-spacing: 1px;
 }
 
 .catalog-addone {
@@ -93,7 +92,7 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
-  margin: 0px 80px 80px;
+  margin: 0px 50px 80px;
 }
 
 .catalog-side {
@@ -131,7 +130,6 @@
 
 .card-description__category {
   font-family: 'LT Superior', serif;
-  letter-spacing: 0.07em;
   font-size: 0.95em;
   font-weight: 400;
 }
@@ -173,7 +171,6 @@
   .catalog-side .section-card:nth-child(11n + 3) .card-description__subtitle {
     font-weight: normal;
     font-size: 1em;
-    letter-spacing: 1px;
   }
 
   .catalog-side .section-card:nth-child(11n + 3) .card-description__price {
@@ -182,7 +179,6 @@
 
   .catalog-side .section-card:nth-child(11n + 3) .card-description__category {
     font-size: 1.1em;
-    letter-spacing: 2px;
   }
 
 }
@@ -233,14 +229,17 @@
   .main-img__text {
     font-size: 2em;
     text-align: left;
-    padding-left: 12px;
+    padding-left: 18px;
     padding-right: 0;
-    bottom: 32px;
+    bottom: 12px;
   }
 }
 
 @media screen and (max-width: 485px) {
 
+  .catalog-title__text {
+    font-size: 1em;
+  }
 
   .btn_back {
     left: 30px;
@@ -249,7 +248,8 @@
   .catalog-side {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    row-gap: 60px;
+    column-gap: 30px;
   }
 
   .main-slider {
@@ -276,7 +276,6 @@
 
   .card-description__title {
     font-size: 3.4vw;
-    letter-spacing: 0.7px;
   }
 
   .card-description__subtitle {
@@ -298,6 +297,7 @@
   .main-img img {
     object-fit: cover;
     min-height: 140px;
+    max-height: 140px;
   }
 
   .main-img__text {
