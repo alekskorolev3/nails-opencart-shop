@@ -835,7 +835,7 @@ i:last-child {
   transition: 0.3s ease all;
   font-size: min(1.2em, 20px);
   font-family: "LT Superior", serif;
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
 }
 
 .card-description__subtitle {
@@ -968,7 +968,7 @@ i:last-child {
 }
 
 .social a span{
-  font-size: 0.875em;
+  font-size: 0.95em;
   font-family: abhayalibre_medium, serif;
 }
 
@@ -1088,19 +1088,19 @@ i:last-child {
   .navbar-socials  {
     gap: 20px;
   }
-  
+
   .navbar-socials span{
     flex-direction: column;
   }
-  
+
   .footer-main {
     gap: 20px;
   }
-  
+
   .footer .rightside-part {
     max-width: fit-content;
   }
-  
+
   .footer-rightside {
     flex-wrap: wrap;
     gap: 40px;
@@ -1257,7 +1257,7 @@ i:last-child {
 
 }
 @media screen and (max-width: 768px) {
-  
+
   .main-img img {
     max-height: 465px;
   }
@@ -1461,7 +1461,7 @@ i:last-child {
   .modal .navbar-socials,
   .modal .navbar-socials span {
     gap: 10px;
-  } 
+  }
   .modal .leftside-part {
     gap: 16px;
   }
@@ -1480,7 +1480,7 @@ i:last-child {
   .header-navbar__list {
     gap: 10px;
   }
-  
+
   .card-img {
     padding: 0;
   }
