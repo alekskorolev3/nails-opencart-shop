@@ -4,12 +4,20 @@
   max-width: 1520px;
   text-align: end;
   font-weight: bolder;
-  font-size: 2.5em;
+  font-size: 2.8em;
   left: 0;
   right: 60px;
   bottom: 60px;
   margin: 0 auto;
-  padding-right: 90px;
+  padding-right: 160px;
+}
+
+.btn_back {
+  font-family: "LT Superior", serif;
+  position: absolute;
+  top: 25px;
+  left: 60px;
+  font-size: min(1.2em, 22px);
 }
 
 .main-img-container {
@@ -110,6 +118,8 @@
 }
 
 @media screen and (min-width: 486px) {
+
+
   .catalog-side .section-card:nth-child(11n + 3) {
     grid-column-start: span 2;
     gap: 24px;
@@ -196,6 +206,12 @@
 }
 
 @media screen and (max-width: 485px) {
+
+
+  .btn_back {
+    left: 30px;
+  }
+
   .catalog-side {
     display: grid;
     grid-template-columns: 1fr 1fr;
