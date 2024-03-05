@@ -16,8 +16,9 @@
   font-family: "LT Superior", serif;
   position: absolute;
   top: 25px;
-  left: 60px;
-  font-size: min(1.2em, 22px);
+  left: 33px;
+  font-size: min(1.25em, 22px);
+
 }
 
 .main-img-container {
