@@ -14,8 +14,16 @@
 @font-face {
   font-family: Involve;
   src: url(../fonts/involve/fonts/TTF/Involve-Bold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: abhayalibre_medium;
+  src: url(../fonts/abhay\ libre/abhayalibre_medium.ttf);
   font-weight: 700;
 }
+
+
 
 @font-face {
   font-family: Involve;
@@ -958,6 +966,11 @@ i:last-child {
 
 .social a span{
   font-size: 0.875em;
+  font-family: abhayalibre_medium, serif;
+}
+
+.social:hover a span{
+  color: #C9BDBD;
 }
 
 .footer .addone-info {
@@ -1005,6 +1018,10 @@ i:last-child {
   font-size: 0.875em;
 }
 
+.part-link:hover a {
+  color: #C9BDBD;
+}
+
 .footer > hr {
   border-top-color: #615F5F;
 }
@@ -1014,7 +1031,6 @@ i:last-child {
   flex-direction: column;
   gap: 75px;
   padding: 17px 57px 107px;
-  margin-left: 41px;
 
 }
 
@@ -1027,6 +1043,7 @@ i:last-child {
   display: flex;
   gap: 92px;
   flex-wrap: wrap;
+  margin-left: 41px;
 }
 .footer-additionally-paymentMethods__elem {
   max-width: 4em;
@@ -1038,29 +1055,54 @@ i:last-child {
 }
 
 .footer-additionally-paymentMethods__elem:nth-child(1){
-  max-width: 103px;
+  max-width: 6.8em;
   width: 100%;
 }
 
 .footer-additionally-paymentMethods__elem:nth-child(2){
-  max-width: 146px;
+  max-width: 9.7em;
   width: 100%;
 }
 
 .footer-additionally-paymentMethods__elem:nth-child(3){
-  max-width: 130px;
+  max-width: 8.6em;
   width: 100%;
 }
 
 .footer-additionally-paymentMethods__elem:nth-child(4){
-  max-width: 76px;
+  max-width: 5em;
   padding-top: 5px;
   width: 100%;
 }
 
+@media screen and (max-width: 1100px)  {
+  .footer-main {
+    gap: 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .footer-rightside {
+  .navbar-socials  {
+    gap: 20px;
+  }
+  
+  .navbar-socials span{
     flex-direction: column;
+  }
+  
+  .footer-main {
+    gap: 20px;
+  }
+  
+  .footer .rightside-part {
+    max-width: fit-content;
+  }
+  
+  .footer-rightside {
+    flex-wrap: wrap;
+    gap: 40px;
+    flex: 1 0 0;
+
   }
   .footer-additionally {
     padding: 32px
@@ -1068,6 +1110,7 @@ i:last-child {
 
   .footer-additionally-paymentMethods {
     gap: 46px;
+    margin-left: 0px;
   }
 }
 
@@ -1085,6 +1128,7 @@ i:last-child {
 
   .footer-additionally-paymentMethods {
     gap: 10px;
+    margin-left: 0;
   }
 
   .footer-rightside {
@@ -1210,9 +1254,9 @@ i:last-child {
 
 }
 @media screen and (max-width: 768px) {
-
+  
   .main-img img {
-    max-height: 160px;
+    max-height: 465px;
   }
 
   .section-card_big {
@@ -1283,7 +1327,7 @@ i:last-child {
 
   .main-section {
     gap: 32px;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
     margin-top: 32px;
   }
 
@@ -1298,16 +1342,12 @@ i:last-child {
   }
 
   .modal {
-    padding: 32px 12px 12px 12px;
+    padding: 32px 12px 40px 20px;
   }
 
   .burger div {
     width: 18px;
     margin: 5px;
-  }
-
-  .line2 {
-    width: 15px!important;
   }
 
   .toggle .line1 {
@@ -1339,19 +1379,20 @@ i:last-child {
   .main-slider {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 5) - 9px);
-    gap: 12px;
+    grid-auto-columns: calc((100% / 4) - 20px);
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     font-size: unset!important;
     padding: 0 12px;
-    margin: 24px 0;
+    margin: 15px 0;
     justify-content: unset;
   }
 
   .slider-elem {
     font-size: 0.8em;
+    padding: 0 5px;
+    gap: 4px;
   }
 
   .header-navbar__list li {
@@ -1360,10 +1401,12 @@ i:last-child {
 
   .footer {
     padding: 32px 12px;
+    margin-top: 15px;
   }
 
   .footer_inner_container {
     padding: 12px;
+    gap: 20px;
   }
 
   .navbar-socials {
@@ -1376,10 +1419,6 @@ i:last-child {
     flex-direction: column;
   }
 
-
-  .modal .footer-leftside .navbar-socials {
-    flex-direction: row;
-  }
   .footer-rightside {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1393,5 +1432,53 @@ i:last-child {
 
   .social:nth-child(odd) {
     flex: 1 0 0;
+  }
+
+  .social a span img {
+    width: 1.25em;
+    height: 1.25em;
+  }
+
+  .social a span {
+    font-size: 1.2em;
+  }
+
+  .modal .footer-leftside:last-child {
+    gap: 31px;
+  }
+
+  .modal .footer_inner_container {
+    padding: 0;
+  }
+
+  .modal-list {
+    margin-bottom: 0;
+  }
+
+  .modal .navbar-socials,
+  .modal .navbar-socials span {
+    gap: 10px;
+  } 
+  .modal .leftside-part {
+    gap: 16px;
+  }
+  .modal .leftside-part:last-child {
+    gap: 10px;
+  }
+
+  .modal .footer .addone-info {
+    color: black;
+  }
+
+  .modal .footer .addone-info h3{
+    font-weight: normal;
+  }
+
+  .header-navbar__list {
+    gap: 10px;
+  }
+  
+  .card-img {
+    padding: 0;
   }
 }
