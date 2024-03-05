@@ -701,9 +701,11 @@ i:last-child {
   flex-direction: column;
   flex: 1 0 0;
   align-self: flex-start;
-  gap: 12px;
+  gap: 24px;
   align-items: flex-start;
   cursor: pointer;
+  max-height: 370px;
+  font-family: "LT Superior", serif;
 }
 
 .card-description__title::after {
@@ -815,7 +817,7 @@ i:last-child {
 
 .card-description-inner {
   display: flex;
-  gap: 13px;
+  gap: 8px;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -831,18 +833,19 @@ i:last-child {
 .card-description__title {
   font-weight: bold;
   transition: 0.3s ease all;
-  font-size: min(1em, 20px);
+  font-size: min(1.2em, 20px);
+  font-family: "LT Superior", serif;
+  letter-spacing: 2px;
 }
 
-.card-description__category,
 .card-description__subtitle {
   font-weight: normal;
-  font-size: 0.85em;
+  font-size: 0.95em;
 }
 
 .card-description__subtitle span {
   font-weight: bolder;
-  font-size: 0.85em;
+  font-size: 0.95em;
 }
 
 .section-card_big .card-description__title {

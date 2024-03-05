@@ -41,7 +41,7 @@
 }
 
 .catalog-title {
-  margin: 42px 80px 58px;
+  margin: 42px 80px 36px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -50,7 +50,7 @@
 
 .catalog-title__text {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.3em;
   letter-spacing: 1px;
 }
 
@@ -98,7 +98,8 @@
 .catalog-side {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 60px;
+  row-gap: 155px;
+  column-gap: 60px;
 }
 
 .grid-view {
@@ -127,6 +128,13 @@
   height: 100%;
 }
 
+.card-description__category {
+  font-family: 'LT Superior', serif;
+  letter-spacing: 0.07em;
+  font-size: 0.95em;
+  font-weight: 400;
+}
+
 @media screen and (min-width: 486px) {
 
 
@@ -135,33 +143,48 @@
     gap: 24px;
     flex-direction: row;
     flex: 1 0 0;
-  }
-
-  .catalog-side .section-card:nth-child(11n + 3) .card-img {
-    flex: 1 0 30%;
     max-height: unset;
   }
 
-  .catalog-side .section-card:nth-child(11n + 3) .card-img img{
+  .catalog-side .section-card:nth-child(11n + 3) .card-img {
+    flex: 1 0 65%;
+    max-height: unset;
+  }
+
+  .catalog-side .section-card:nth-child(11n + 3) .card-img img {
     max-height: unset;
   }
 
   .catalog-side .section-card:nth-child(11n + 3) .card-description {
-    flex: 1 0 20%;
+    flex: 1 0 50%;
     align-self: center;
-    transform: translateX(-12%);
+    transform: translateX(-24%);
   }
 
-  .catalog-side .section-card:nth-child(11n + 3) .card-description__title{
-    font-size: min(1.5em, 22px)
+  .catalog-side .section-card:nth-child(11n + 3) .card-description-inner {
+    gap: 12px;
   }
 
-  .catalog-side .section-card:nth-child(11n + 3) .card-description__price{
-    font-size: min(1.5em, 22px)
+  .catalog-side .section-card:nth-child(11n + 3) .card-description__title {
+    font-size: min(1.65em, 25px)
   }
+
+  .catalog-side .section-card:nth-child(11n + 3) .card-description__subtitle {
+    font-weight: normal;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+
+  .catalog-side .section-card:nth-child(11n + 3) .card-description__price {
+    font-size: min(1.6em, 25px)
+  }
+
+  .catalog-side .section-card:nth-child(11n + 3) .card-description__category {
+    font-size: 1.1em;
+    letter-spacing: 2px;
+  }
+
 }
-
-
 
 .catalog-side .section-card:nth-child(11n + 3) .card-price-container {
   flex-direction: column;
@@ -252,6 +275,7 @@
 
   .card-description__title {
     font-size: 3.4vw;
+    letter-spacing: 0.7px;
   }
 
   .card-description__subtitle {
@@ -304,6 +328,7 @@
   .catalog-side .section-card:nth-child(5n + 1) .card-description__title {
     font-size: 4.2vw;
   }
+
 
   .catalog-side .section-card:nth-child(5n + 1) .card-description__subtitle {
     font-size: 3.4vw;
