@@ -35,6 +35,30 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "LT Superior";
+  src: url(../fonts/LTSuperior/LTSuperior-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "LT Superior";
+  src: url(../fonts/LTSuperior/LTSuperior-Semibold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "LT Superior";
+  src: url(../fonts/LTSuperior/LTSuperior-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "LT Superior";
+  src: url(../fonts/LTSuperior/LTSuperior-Regular.otf);
+  font-weight: 400;
+}
+
 html {
   color: #222;
   line-height: 1.4;
@@ -371,7 +395,7 @@ body::-webkit-scrollbar {
   padding: 0 50px;
   position: sticky;
   top: 0;
-  height: 50px;
+  height: 60px;
   background-color: #fff;
   z-index: 100;
   box-shadow: 0px 12px 7px 0px rgba(0, 0, 0, 0.1);
@@ -434,7 +458,7 @@ body::-webkit-scrollbar {
 
 .header-navbar__list {
   display: flex;
-  gap: 1em;
+  gap: 30px;
 }
 
 .header-navbar__list li{
