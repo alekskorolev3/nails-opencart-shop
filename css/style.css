@@ -712,7 +712,7 @@ i:last-child {
 }
 
 .card-btns__more:hover {
-  background-color: #FFE24B;
+  background-color: #C9BDBD;
   color: #000000;
 }
 
@@ -866,10 +866,10 @@ i:last-child {
 
 .footer_inner_container {
   max-width: 1520px;
-  padding: 48px 67px;
+  padding: 48px 67px 28px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 39px;
   color: #ffffff;
   width: 100%;
 }
@@ -890,7 +890,7 @@ i:last-child {
 .footer-main {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 170px;
 }
 
 .footer-leftside {
@@ -901,7 +901,7 @@ i:last-child {
 .leftside-part {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 16px;
 }
 
 .leftside-part:last-child {
@@ -913,7 +913,7 @@ i:last-child {
   font-weight: bold;
 }
 .navbar-phone  {
-  margin-bottom: 3px;
+  margin-bottom: 8px;
 }
 
 .phone-description {
@@ -922,10 +922,18 @@ i:last-child {
 }
 .navbar-socials {
   display: flex;
-  flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 12px;
-  align-items: center;
+  flex-direction: column;
+}
+
+.navbar-socials > span {
+  display: flex;
+  gap: 20px;
+  flex: 1 0 0;
+}
+
+.social {
 }
 
 .icon_social {
@@ -934,14 +942,6 @@ i:last-child {
 
 .social:hover .icon_social {
   transform: scale(1.2);
-}
-
-.social:nth-child(even) {
-  flex: 1 0 75%;
-}
-
-.social:nth-child(odd) {
-  flex: 1 0 15%;
 }
 
 .social a {
@@ -960,6 +960,12 @@ i:last-child {
   font-size: 0.875em;
 }
 
+.footer .addone-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 
 .addone-info h3{
   font-size: 1.18em;
@@ -973,13 +979,15 @@ i:last-child {
 }
 .footer-rightside {
   display: flex;
-  gap: 80px;
-  flex: 1 0 50%;
+  gap: 58px;
+  flex: 1 0 60%;
 }
 .rightside-part {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 33px;
+  max-width: 274px;
+  width: 100%;
 }
 .part-title {
   font-weight: bolder;
@@ -1004,15 +1012,16 @@ i:last-child {
 .footer-additionally {
   display: flex;
   flex-direction: column;
-  gap: 37px;
-  padding: 67px;
+  gap: 75px;
+  padding: 17px 57px 107px;
+  margin-left: 41px;
 
 }
 
 
 .footer-additionally__quickInfo {
   color: #615F5F;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 .footer-additionally-paymentMethods {
   display: flex;
@@ -1026,6 +1035,27 @@ i:last-child {
 .footer-additionally-paymentMethods__elem img {
   width: 100%;
   height: auto;
+}
+
+.footer-additionally-paymentMethods__elem:nth-child(1){
+  max-width: 103px;
+  width: 100%;
+}
+
+.footer-additionally-paymentMethods__elem:nth-child(2){
+  max-width: 146px;
+  width: 100%;
+}
+
+.footer-additionally-paymentMethods__elem:nth-child(3){
+  max-width: 130px;
+  width: 100%;
+}
+
+.footer-additionally-paymentMethods__elem:nth-child(4){
+  max-width: 76px;
+  padding-top: 5px;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
