@@ -117,8 +117,8 @@
   color: #fff;
   border-radius: 7px;
   padding: 10px 14px;
-  align-self: flex-start;
-
+  align-self: stretch;
+  max-width: 380px;
 }
 
 @media screen and (max-width: 1200px) {

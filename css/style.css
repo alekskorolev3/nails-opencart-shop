@@ -1226,7 +1226,7 @@ i:last-child {
   flex-direction: column;
   gap: 5px;
   padding: 0;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .modal .footer .footer_inner_container {
@@ -1388,7 +1388,7 @@ i:last-child {
   .main-slider {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 4) - 20px);
+    grid-auto-columns: calc((100% / 4));
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -1409,7 +1409,7 @@ i:last-child {
   }
 
   .footer {
-    padding: 32px 12px;
+    padding: 32px 0;
     margin-top: 15px;
   }
 
