@@ -24,6 +24,15 @@
   position: relative;
 }
 
+.main-slider-catalog {
+  border-bottom: 1px solid #D1D1D1;
+  padding: 32px 50px 50px;
+}
+
+.main-img-catalog img{
+  height: 354px;
+}
+
 .main-catalog {
   display: flex;
   flex-direction: column;
@@ -41,7 +50,8 @@
 
 .catalog-title__text {
   text-align: center;
-  font-size: 1em;
+  font-size: 1.2em;
+  letter-spacing: 1px;
 }
 
 .catalog-addone {
