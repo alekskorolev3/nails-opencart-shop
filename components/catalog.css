@@ -242,7 +242,9 @@
   }
 
   .btn_back {
-    left: 30px;
+    left: 19px;
+    top: 12px;
+    font-size: 1em;
   }
 
   .catalog-side {
