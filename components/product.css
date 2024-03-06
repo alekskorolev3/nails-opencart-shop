@@ -246,7 +246,7 @@
     }
 
     .product-card__capacity {
-      font-size: 1em;
+      font-size: 0.85em;
     }
 
     .product-card__price {
@@ -279,6 +279,10 @@
 
     .product-card__btn {
       position: relative;
+    }
+
+    .product-description__category {
+      font-size: 1em;
     }
   }
 

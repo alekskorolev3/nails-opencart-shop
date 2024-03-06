@@ -174,12 +174,46 @@
 
   .person-forms {
     flex-direction: column;
-    padding: 16px;
-    gap: 37px;
+    padding: 0px 16px 16px;
+    gap: 24px;
   }
 
   .person-form:last-child {
     padding-top: 24px;
     border-top: 1px solid #D9D9D9;
   }
+
+  .person-data__name {
+    font-size: 1.1em;
+  }
+
+  .person-data__email {
+    font-size: 1em;
+  }
+
+  .person-link__title {
+    font-size: 0.875em;
+  }
+
+  .person-from__title {
+    font-size: 1.125em;
+  }
+
+  .person-form > label > span {
+    font-size: 0.875em;
+  }
+
+  .person-form input {
+    font-size: 0.9em;
+  }
+
+  .person-form > label > div > span {
+    font-size: 0.875em;
+  }
+
+  .person-form > button {
+    font-size: 0.81em;
+  }
+
+  
 }

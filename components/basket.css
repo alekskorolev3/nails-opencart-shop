@@ -24,6 +24,11 @@
   display: flex;
   justify-content: space-between;
   flex: 1 0 0;
+
+}
+
+.basket-btns button {
+  color: #1119C7;
 }
 
 .basket-cards {
@@ -261,6 +266,11 @@ label.labelRadio input {
   justify-content: center;
   background-color: black;
   border-radius: 50%;
+  cursor: pointer;
+}
+
+.basket__phoneContainer:hover {
+  background-color: #C9BDBD;
 }
 
 .basket__phoneContainer img {
@@ -281,6 +291,8 @@ label.labelRadio input {
 
 .basket-payment {
   display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .basket-payment__title {
   font-size: 1.3em;
@@ -553,9 +565,13 @@ hr.noneHR {
   .basket-promo__title span,
   .basket-delivery__title {
     font-size: 1.3em;
+    margin-bottom: 3px;
   }
+
+  
   .basket-delivery__subitle {
-      font-size: 0.93em
+      font-size: 0.93em;
+      margin-bottom: 16px;
   }
     
   label.labelRadio > span {
@@ -576,6 +592,7 @@ hr.noneHR {
 
   .basket-payment {
     padding: 0 12px;
+    gap: 14px;
   }
 
   .basket-title {
@@ -587,7 +604,11 @@ hr.noneHR {
   }
 
   .basket-card {
-    padding: 10px 12px;
+    padding: 21px 12px 0;
+  }
+
+  .basket-card__close {
+    top: 21px;
   }
 
   .basket-delivery {
@@ -614,5 +635,48 @@ hr.noneHR {
 
   .move-button {
     padding: 10px 12px;
+  }
+
+  .basket-card .card-btns__more {
+    font-size: 0.875em;
+  }
+
+  .basket-card .card-description__price {
+    font-size: 0.875em;
+  }
+
+  .basket-card__IMGcontainer img {
+    max-width: 7.3em;
+    min-width: 7.3em;
+  }
+
+  .basket-promo form {
+    width: 100%;
+  }
+
+  .basket-rightside__payment span {
+    font-size: inherit;
+  }
+
+  .basket-rightside__products span,
+  .basket-rightside__discount span,
+  .basket-rightside__bonus span,
+  .basket-rightside__delivery span,
+  .basket-rightside__deliveryPoint span {
+    font-size: inherit;
+  }
+
+  .move-button > span {
+    font-size: 1.3em;
+  }
+
+  
+
+  .basket-btns button {
+    font-size: 0.95em;
+  }
+
+  .basket-delivery-form__addone {
+    margin-bottom: 56px;
   }
 }

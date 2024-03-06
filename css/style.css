@@ -765,6 +765,7 @@ i:last-child {
   font-size: 0.85em;
   max-width: 100px;
   width: 100%;
+  min-width: fit-content;
   transition: 0.3s ease all;
 }
 .card-btns__lock {
@@ -1018,6 +1019,7 @@ i:last-child {
   color: #B3B3B3;
 
   font-size: 0.95em;
+  cursor: pointer;
 }
 
 .part-link:hover a {
@@ -1109,6 +1111,10 @@ i:last-child {
   .footer-additionally-paymentMethods {
     gap: 46px;
     margin-left: 0px;
+  }
+
+  .social {
+    align-self: flex-start;
   }
 }
 
@@ -1496,5 +1502,34 @@ i:last-child {
 
   .footer-main {
     gap: 10px;
+  }
+
+  .footer-additionally__quickInfo {
+    font-size: 0.7em;
+    line-height: 1.5em;
+  }
+
+  .main-section:last-child {
+    margin-top: 0;
+  }
+
+  .main-slider {
+    margin-bottom: 6px;
+  }
+
+  .modal .footer .footer_inner_container {
+    margin-top: 20px;
+  }
+
+  .modal .leftside-part {
+    gap: 31px;
+  }
+
+  .modal .footer .addone-info h3 {
+    font-size: 0.93em;
+  }
+
+  .modal {
+      min-width: 320px;
   }
 }
