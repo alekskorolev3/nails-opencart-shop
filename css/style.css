@@ -409,7 +409,7 @@ body::-webkit-scrollbar {
   padding: 0 35px;
   position: sticky;
   top: 0;
-  height: 60px;
+  height: 46px;
   background-color: #fff;
   z-index: 100;
 }
@@ -483,15 +483,15 @@ body::-webkit-scrollbar {
 }
 
 .header-navbar__list li:nth-child(1) {
-  width: 1.56em;
+  width: 25px;
 }
 
 .header-navbar__list li:nth-child(2) {
-  width: 1.25em;
+  width: 20.69px;
 }
 
 .header-navbar__list li:nth-child(3) {
-  width: 0.93em;
+  width: 15.67px;
 }
 
 .header-navbar__list li img {
@@ -558,18 +558,16 @@ i:last-child {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 270px;
-  gap: 40px;
+  gap: 100px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: 0;
-  margin-left: 68px;
+  margin: 0 68px;
 }
 
 .wrapper .carousel-promotion {
-  grid-auto-columns: 580px;
-  gap: 40px!important;
-  margin-left: 62px;
+  grid-auto-columns: 645px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -683,8 +681,9 @@ i:last-child {
 }
 
 .section-title h2 {
-  font-size: min(1.8em, 36px);
+  font-size: min(1.85em, 36px);
   font-weight: 600;
+  font-family: "Inter", serif;
 }
 
 .section-container {
@@ -963,13 +962,13 @@ i:last-child {
 }
 
 .social a img {
-  width: 1em;
-  height: 1em;
+  width: 16px;
+  height: 16px;
 }
 
 .social a span{
+  font-family: Inter, serif;
   font-size: 0.95em;
-  font-family: abhayalibre_medium, serif;
 }
 
 .social:hover a span{
@@ -1169,7 +1168,7 @@ i:last-child {
 }
 
 .modal {
-  top: 50px;
+  top: 46px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -1394,7 +1393,7 @@ i:last-child {
   .main-slider {
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 4));
+    grid-auto-columns: 80px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -1533,5 +1532,45 @@ i:last-child {
       min-width: 320px;
   }
 
+  .header-navbar__list li:nth-child(1) {
+    width: 25px;
+  }
+  
+  .header-navbar__list li:nth-child(2) {
+    width: 21px;
+  }
+  
+  .header-navbar__list li:nth-child(3) {
+    width: 18px;
+  }
 
+  .header-navbar__list li a {
+    width: 100%;
+  }
+  
+
+  .logo-container {
+    max-width: 94px;
+  }
+  
+  .main-section{
+    gap: 15px;
+  }
+
+  .social a span img,
+  .social a img {
+    max-width: 24.5px;
+    width: 100%;
+    height: auto;
+  }
+
+  .social a span {
+    font-family: Inter, serif;
+    font-size: 1.08em;
+  }
+
+  .addone-info h3 {
+    font-weight: normal;
+    font-size: 0.93em;
+  }
 }
