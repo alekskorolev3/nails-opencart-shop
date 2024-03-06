@@ -679,4 +679,8 @@ hr.noneHR {
   .basket-delivery-form__addone {
     margin-bottom: 56px;
   }
+
+  .basket {
+    padding-bottom: 16px;
+  }
 }
