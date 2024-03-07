@@ -293,6 +293,11 @@
     margin-top: 15px;
     margin-bottom: 6px;
   }
+
+  .catalog-title__text {
+    font-size: 1.1em;
+    font-weight: 400;
+  }
   .main-catalog {
     padding-bottom: 135px;
   }
@@ -303,7 +308,7 @@
     font-size: 1vw;
     row-gap: 80px;
     column-gap: 0;
-    grid-template-columns: minmax(1fr, 190px) minmax(10px, 34px) minmax(1fr, 190px);
+    grid-template-columns: 1fr 0.1fr 1fr;
     grid-template-areas:
     "big big big"
     "small1 . small2"
