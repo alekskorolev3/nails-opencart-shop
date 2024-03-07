@@ -303,6 +303,7 @@
     font-size: 1vw;
     row-gap: 80px;
     column-gap: 0;
+    grid-template-columns: minmax(1fr, 190px) minmax(10px, 34px) minmax(1fr, 190px);
     grid-template-areas:
     "big big big"
     "small1 . small2"
