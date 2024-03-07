@@ -604,12 +604,17 @@ hr.noneHR {
     margin-bottom: 6px;
   }
 
-  
+  .basket-payment__title {
+    font-size: 1.3em;
+    margin-bottom: 6px;
+  }
+
+
   .basket-delivery__subitle {
       font-size: 0.93em;
       margin-bottom: 16px;
   }
-    
+
   label.labelRadio > span {
       font-size: 0.85em;
   }
@@ -712,7 +717,7 @@ hr.noneHR {
     font-size: 1.3em;
   }
 
-  
+
 
   .basket-btns button {
     font-size: 0.95em;
