@@ -1,11 +1,12 @@
 .basket {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 66px;
   max-width: 1640px;
-  padding: 59px 67px 0;
+  padding: 59px 77px 0 67px;
   font-family: LT Superior, serid;
 }
+
 .basket-leftside {
   display: flex;
   flex-direction: column;
@@ -16,12 +17,13 @@
   margin-bottom: 10px;
 }
 
-.basket-title h2{
+.basket-title h2 {
   font-weight: 700;
   font-family: Inter, serif;
   flex: 1 0 0;
   font-size: 1.56em;
 }
+
 .basket-btns {
   display: flex;
   justify-content: space-between;
@@ -40,6 +42,7 @@
   flex-direction: column;
   padding-top: 10px;
 }
+
 .basket-card {
   display: flex;
   gap: 10px;
@@ -47,6 +50,7 @@
   border-top: 1px solid #D9D9D9;
   padding: 24px 0;
 }
+
 .basket-card__IMGcontainer {
   flex: 0.2 0 0;
 }
@@ -58,40 +62,45 @@
   height: auto;
 }
 
-.basket-card  .basket-card-main {
+.basket-card .basket-card-main {
   flex: 1 0 0;
 }
-.basket-card  .card-description {
-  flex: 1 0 0;
+
+.basket-card .card-description {
+  flex: 0.1 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 10px 0;
 }
-.basket-card  .card-description-inner {
+
+.basket-card .card-description-inner {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 10px;
+  white-space: nowrap;
 }
 
-.basket-card  .card-description__title,
-.basket-card  .card-description__subtitle,
-.basket-card  .card-description__category {
+.basket-card .card-description__title,
+.basket-card .card-description__subtitle,
+.basket-card .card-description__category {
   font-family: LT Superior, serif;
   letter-spacing: 1px;
 }
 
-.basket-card  .card-price-container {
+.basket-card .card-price-container {
   align-self: flex-start;
   display: flex;
   justify-content: flex-start;
 }
-.basket-card  .card-description__price {
+
+.basket-card .card-description__price {
   flex: 1 0 0;
   font-size: 1.25em;
 }
-.basket-card  .card-btns__more {
+
+.basket-card .card-btns__more {
   margin-right: 20px;
   background-color: #D9D9D9;
   border-radius: 5px;
@@ -120,7 +129,7 @@
 
 .card-btns__more:nth-last-of-type(1) {
   margin-right: 10px;
-  margin-left: 30px ;
+  margin-left: 30px;
   background-color: white;
   border-radius: 5px;
   border: 1px solid black;
@@ -129,7 +138,7 @@
 
 .basket-card__close {
   position: absolute;
-  top: 10px;
+  top: 55px;
   right: 10px;
   padding: 5px;
 }
@@ -139,18 +148,20 @@
   gap: 10px;
   align-items: center;
 }
+
 .basket-promo__title {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.basket-promo__title span{
+.basket-promo__title span {
   font-weight: bold;
   font-size: 1.6em;
   font-family: Inter, serif;
 }
-.basket-promo__helper img{
+
+.basket-promo__helper img {
   width: 1em;
   height: 1em;
   height: auto;
@@ -182,16 +193,19 @@
   max-width: 187px;
   width: 100%;
 }
+
 .basket-delivery {
   display: flex;
   flex-direction: column;
 }
+
 .basket-delivery__title {
   font-size: 1.625em;
   font-weight: bold;
   margin-bottom: 15px;
   font-family: Inter, serif;
 }
+
 .basket-delivery__subitle {
   font-size: 1.25em;
   margin-bottom: 25px;
@@ -208,22 +222,22 @@
   flex-direction: column;
 }
 
-.delivery-form__blockInput > label {
+.delivery-form__blockInput>label {
   margin-bottom: 10px;
 }
 
-.delivery-form__blockInput > div {
+.delivery-form__blockInput>div {
   display: flex;
   gap: 25px;
   margin-bottom: 10px;
 }
 
-.delivery-form__blockInput > div > label:first-child {
+.delivery-form__blockInput>div>label:first-child {
   flex: 1 0 0;
 }
 
 .basket-delivery-form input,
-.basket-delivery-form select{
+.basket-delivery-form select {
   border-radius: 5px;
   border: 1px solid black;
   padding: 5px 10px;
@@ -232,7 +246,7 @@
   height: 40px;
 }
 
-.basket-delivery-form label{
+.basket-delivery-form label {
   display: flex;
   flex-direction: column;
   flex: 1 0 0;
@@ -251,15 +265,15 @@ label.labelRadio {
   gap: 15px;
 }
 
-label.labelRadio > span {
+label.labelRadio>span {
   font-weight: 600;
 }
 
-label.labelRadio > span > span:first-child {
+label.labelRadio>span>span:first-child {
   font-size: 1.25em;
 }
 
-label.labelRadio > span > span:last-child {
+label.labelRadio>span>span:last-child {
   font-size: 0.81em;
 }
 
@@ -275,9 +289,14 @@ label.labelRadio input {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-size: 1.25em;
-  font-weight: 600;
+
   margin-bottom: 78px;
+}
+
+.basket-delivery-form__addone span:first-child {
+  font-size: 1.33em;
+  font-weight: 600;
+  max-width: 574px;
 }
 
 .basket__phoneContainer {
@@ -287,6 +306,9 @@ label.labelRadio input {
   background-color: black;
   border-radius: 50%;
   cursor: pointer;
+  max-width: 36px;
+  width: 100%;
+  height: 36px;
 }
 
 .basket__phoneContainer:hover {
@@ -294,10 +316,10 @@ label.labelRadio input {
 }
 
 .basket__phoneContainer img {
-  padding: 5px;
-  min-width: 2em;
-  max-width: 2em;
-  height: auto;
+  max-width: 20px;
+  width: 100%;
+  max-height: 18px;
+  height: 100%;
 }
 
 .basket-delivery-form button {
@@ -316,11 +338,13 @@ label.labelRadio input {
   flex-direction: column;
   gap: 40px;
 }
+
 .basket-payment__title {
   font-size: 1.6em;
   font-weight: bold;
   font-family: Inter, serif;
 }
+
 .basket-payment-list {
   display: flex;
   flex-direction: column;
@@ -357,7 +381,9 @@ label.labelRadio input {
 }
 
 .basket-rightside {
-  flex: 0.4 0 0;
+  flex: 1 0 0;
+  max-width: 410px;
+  max-height: 415px;
   box-shadow: 1px 1px 8.5px 1px rgba(0, 0, 0, 0.09);
   border-radius: 15px;
   align-self: self-start;
@@ -372,39 +398,47 @@ label.labelRadio input {
   gap: 15px;
   margin: 20px;
 }
+
 .basket-rightside-property {
   display: flex;
   justify-content: space-between;
 
 }
 
-.basket-rightside__payment {
-  font-size: 1.3em;
+.basket-rightside__payment span {
+  font-size: 1.4em;
   font-weight: bold;
 }
 
-.basket-rightside__products {
+.basket-rightside__products span {
   font-size: 0.9em;
 }
-.basket-rightside__discount {
+
+.basket-rightside__discount span {
   font-size: 0.9em;
 
 }
-.basket-rightside__bonus {
+
+.basket-rightside__bonus span {
   font-size: 0.9em;
 
 }
-.basket-rightside__delivery {
-  font-size: bold;
+
+.basket-rightside__delivery span {
+  font-weight: 600;
+  font-size: 1.08em;
 }
+
 .basket-rightside__deliveryDoor,
 .basket-rightside__deliveryPoint {
   align-self: flex-end;
 }
+
 .basket-rightside__deliveryPoint button,
 .basket-rightside__deliveryDoor button {
   color: #299F3E;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 1.08em;
 }
 
 .basket-rightside-button {
@@ -425,10 +459,16 @@ label.labelRadio input {
   align-items: center;
   gap: 20px;
   padding: 12px;
-  width: 15em;
+  max-width: 283px;
+  width: 100%;
+  height: 37px;
   border-radius: 8px;
   font-weight: 700;
 
+}
+
+.basket-rightside-button button span {
+  font-size: 0.86em;
 }
 
 .basket-rightside-button button img {
@@ -445,21 +485,23 @@ hr.noneHR {
   margin: 10px 0;
 }
 
-.basket-rightside-button > span:first-child{
+.basket-rightside-button>span:first-child {
   display: none;
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
 
 
   .basket {
     flex-direction: column;
     padding: 40px 0px;
   }
+
   .basket-card {
     flex-wrap: wrap;
     padding: 10px 32px;
   }
+
   .card-price-result {
     flex: 1 0 60%;
     margin-left: 17px;
@@ -475,7 +517,7 @@ hr.noneHR {
   }
 
   .basket-btns {
-    padding:  0 32px;
+    padding: 0 32px;
   }
 
   .basket-promo {
@@ -496,11 +538,11 @@ hr.noneHR {
     width: 100%;
   }
 
-  .delivery-form__blockInput > div > label:first-child {
+  .delivery-form__blockInput>div>label:first-child {
     flex: 0.5 0 0;
   }
 
-  .delivery-form__blockInput > div > label:last-child {
+  .delivery-form__blockInput>div>label:last-child {
     flex: 1 0 0;
   }
 
@@ -537,7 +579,7 @@ hr.noneHR {
     margin: 37px 0 29px;
   }
 
-  label.labelRadio input{
+  label.labelRadio input {
     max-width: 1.25em;
     height: 1.25em;
   }
@@ -548,7 +590,7 @@ hr.noneHR {
   }
 
   .basket-payment-list ul,
-  .basket-payment-list ul li{
+  .basket-payment-list ul li {
     gap: 15px;
   }
 
@@ -562,7 +604,7 @@ hr.noneHR {
     font-size: 0.95em;
   }
 
-  .basket-payment-list li > span{
+  .basket-payment-list li>span {
     font-size: 0.875em;
   }
 
@@ -572,7 +614,7 @@ hr.noneHR {
 
   .basket-card .card-description__category,
   .basket-card .card-description__subtitle {
-      font-size: 0.65em;
+    font-size: 0.65em;
   }
 
   .move-button {
@@ -587,17 +629,19 @@ hr.noneHR {
     box-shadow: 4px -2px 5px 1px rgba(0, 0, 0, 0.2);
   }
 
-  .move-button > span:first-child {
+  .move-button>span:first-child {
     display: flex;
     font-weight: bolder;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .delivery-form__blockInput > label > span,
-  .delivery-form__blockInput > div > label > span {
+
+  .delivery-form__blockInput>label>span,
+  .delivery-form__blockInput>div>label>span {
     font-size: 0.75em;
   }
+
   .basket-promo__title span,
   .basket-delivery__title {
     font-size: 1.3em;
@@ -611,20 +655,20 @@ hr.noneHR {
 
 
   .basket-delivery__subitle {
-      font-size: 0.93em;
-      margin-bottom: 16px;
+    font-size: 0.93em;
+    margin-bottom: 16px;
   }
 
-  label.labelRadio > span {
-      font-size: 0.85em;
+  label.labelRadio>span {
+    font-size: 0.85em;
   }
 
-  .basket-delivery-form__addone > span {
+  .basket-delivery-form__addone>span {
     font-size: 0.65em;
   }
 
   .delivery-form__blockRadio {
-      margin: 30px 0 25px;
+    margin: 30px 0 25px;
   }
 
   .basket-rightside-description {
@@ -641,7 +685,7 @@ hr.noneHR {
   }
 
   .basket-btns {
-    padding:  0 12px;
+    padding: 0 12px;
   }
 
   .basket-card {
@@ -713,7 +757,7 @@ hr.noneHR {
     font-size: inherit;
   }
 
-  .move-button > span {
+  .move-button>span {
     font-size: 1.3em;
   }
 
@@ -743,9 +787,11 @@ hr.noneHR {
     padding-right: 0px;
   }
 
-  .basket-delivery-form input, .basket-delivery-form select {
+  .basket-delivery-form input,
+  .basket-delivery-form select {
     height: 37px;
   }
+
   .basket form input {
     height: 37px;
   }
@@ -756,23 +802,30 @@ hr.noneHR {
     padding: 5px;
   }
 
-  label.labelRadio > span > span:first-child {
+  label.labelRadio>span>span:first-child {
     font-size: 1.02em;
   }
 
-  label.labelRadio > span > span:last-child {
+  label.labelRadio>span>span:last-child {
     font-size: 0.8em;
   }
 
-  .basket-delivery-form__addone > span {
-    font-size: 0.7em;
+  .basket-delivery-form__addone>span:first-child {
+    max-width: 312px;
+    font-size: 0.8em;
   }
 
   .basket-delivery-form button {
     font-size: 0.81em;
   }
 
-  .basket-card .card-description__title, .basket-card .card-description__subtitle, .basket-card .card-description__category {
+  .basket-card .card-description__title,
+  .basket-card .card-description__subtitle,
+  .basket-card .card-description__category {
     letter-spacing: 0px;
+  }
+
+  .basket-payment-list li img {
+    max-width: 21px;
   }
 }
