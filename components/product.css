@@ -5,11 +5,15 @@
 }
 
 .main-product {
-  padding: 19px 85px;
+  padding: 19px 85px 38px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   max-width: 1550px;
+}
+
+.main-product ~ .main-section {
+  gap: 39px;
 }
 
 .product-card {
@@ -240,7 +244,7 @@
 
 
   .product-description {
-    padding: 160px 12px 70px;
+    padding: 160px 17px 70px;
   }
 
   .product-card__containerINFO_part:first-child {
@@ -294,8 +298,10 @@
 
   .product-card__btn {
     padding: 10px 15px;
-    position: relative;
-
+    position: absolute;
+    top: 25px;
+    max-width: 160px;
+    font-size: 13px;
   }
 
   .product-card__containerINFO_part:last-child {
@@ -308,6 +314,62 @@
 
   .product-card__containerINFO_part:last-child {
     top: 200px;
+  }
+
+  .product-card__containerIMG img {
+    height: 300px;
+  }
+
+  .product-description__specification,
+  .product-description__сompound,
+  .product-description__сharacteristics,
+  .product-description__rave,
+  .product-description__manufacturer {
+    font-size: 14px;
+  }
+
+  .main-product ~ .main-section  {
+    gap: 22px;
+    align-items: center;
+  }
+
+  .main-product ~ .main-section .section-title {
+    padding: 0;
+  }
+
+  .main-product ~ .main-section .section-title h2{
+    font-size: 22px;
+  }
+
+  .main-product ~ .main-section .card-img img {
+    min-height: 190px;
+    max-height: 190px;
+  }
+
+  .main-product ~ .main-section .wrapper .carousel {
+    grid-auto-columns: 190px;
+    gap: 34px;
+  }
+
+  .main-product ~ .main-section .section-card .card-description__title{
+    font-size: 14px;
+  }
+
+  .main-product ~ .main-section .section-card .card-description__subtitle{
+    font-size: 12px;
+  }
+
+  .main-product ~ .main-section .section-card .card-description__price{
+    font-size: 14px;
+    min-width: max-content;
+  }
+
+  .main-product ~ .main-section  .section-card .card-btns__more{
+    font-size: 12px;
+  }
+
+  .main-product ~ .main-section .card-price-container{
+    gap: 10px;
   }
 }
 
