@@ -183,7 +183,7 @@
 .product-card__containerINFO_part {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .main-btn_back:hover img {
@@ -329,6 +329,7 @@
     top: 25px;
     max-width: 160px;
     font-size: 13px;
+    max-height: 29px;
   }
 
   .product-card__containerINFO_part:last-child {
