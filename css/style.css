@@ -810,7 +810,7 @@ i:last-child {
   gap: 13px;
   align-items: flex-start;
   width: 100%;
-  padding: 0 9px;
+  padding: 0 9px 0 22px;
 }
 
 .card-description-title-container {

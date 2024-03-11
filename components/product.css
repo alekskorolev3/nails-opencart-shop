@@ -2,6 +2,8 @@
 .main-btn_back {
   padding: 12px;
   align-self: flex-start;
+  font-family: 'LT Superior', serif;
+  font-size: 1.25em;
 }
 
 .main-product {
@@ -46,20 +48,28 @@
   left: -4em;
 }
 
-.product-card__category {}
+.product-card__category {
+  font-family: 'LT Superior', serif;
+  font-size: 1.5em;
+  letter-spacing: 0.04em;
+}
 
 .product-card__title {
   font-size: min(2em, 36px);
   font-weight: bold;
+  font-family: 'LT Superior', serif;
 }
 
 .product-card__capacity {
-  font-size: 1em;
+  font-size: 1.25em;
+  font-family: 'LT Superior', serif;
+  letter-spacing: 0.04em;
 }
 
 .product-card__price {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: bold;
+  font-family: 'LT Superior', serif;
 }
 
 .product-card__delivery {
@@ -194,6 +204,23 @@
   }
 }
 
+@media screen and (max-width: 1100px) {
+  .product-card__category {
+    font-size: 1em;
+  }
+
+  .product-card__title {
+    font-size: min(2em, 32px);
+  }
+
+  .product-card__capacity {
+    font-size: 1em;
+  }
+
+  .product-card__price {
+    font-size: 1em;
+  }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -297,7 +324,7 @@
   }
 
   .product-card__btn {
-    padding: 10px 15px;
+    padding: 8px 12px;
     position: absolute;
     top: 25px;
     max-width: 160px;
