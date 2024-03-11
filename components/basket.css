@@ -3,8 +3,8 @@
   justify-content: space-between;
   gap: 66px;
   max-width: 1640px;
-  padding: 59px 77px 0 67px;
-  font-family: LT Superior, serid;
+  padding: 59px 100px 0 100px;
+  font-family: LT Superior, serif;
 }
 
 .basket-leftside {
@@ -133,7 +133,6 @@
 
 .card-btns__more:nth-last-of-type(1) {
   margin-right: 10px;
-  margin-left: 30px;
   background-color: white;
   border-radius: 5px;
   border: 1px solid black;
@@ -505,6 +504,12 @@ hr.noneHR {
 
 .basket-rightside-button>span:first-child {
   display: none;
+}
+
+@media screen and (min-width: 1600px) {
+  .basket {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1100px) {
