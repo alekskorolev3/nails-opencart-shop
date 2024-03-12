@@ -506,6 +506,10 @@ hr.noneHR {
   display: none;
 }
 
+.move-button {
+  display: none;
+}
+
 @media screen and (min-width: 1600px) {
   .basket {
     margin: 0 auto;
@@ -585,6 +589,7 @@ hr.noneHR {
     box-shadow: none;
     border-radius: 0px;
     border-top: 20px solid #EFEDED;
+    max-width: unset;
   }
 
   .delivery-form__blockRadio {
@@ -653,21 +658,34 @@ hr.noneHR {
     width: 100%;
     margin: 0;
     padding: 10px 32px;
-    justify-content: space-between;
     box-shadow: 4px -2px 5px 1px rgba(0, 0, 0, 0.2);
+    background: white;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  .move-button_active {
+    display: flex;
+  }
+
+  .move-button>span:last-child {
+    color: #299F3E;
+    font-size: 15px;
+  }
+
+  .move-button>span:nth-child(2) {
+    font-size: 16px;
   }
 
   .move-button>span:first-child {
-    display: flex;
     font-weight: bolder;
+    font-size: 17px;
   }
+
 }
 
 @media screen and (max-width: 480px) {
 
-  .basket-rightside-button button {
-    max-width: 150px;
-  }
   .basket-card .card-btns__more {
     height: 16px;
     line-height: 0.875em;

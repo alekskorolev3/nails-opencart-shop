@@ -432,6 +432,11 @@
               <span>Оплатить</span><img src="./img/creditCard-white.svg" alt="payment">
             </button>
           </div>
+          <div class="move-button">
+            <span>2400.00 руб</span>
+            <span>3 шт.</span>
+            <span>Бесплатная <br> доставка до двери</span>
+          </div>
         </div>
       </div>
 
@@ -579,12 +584,13 @@
   <script>
     let reaction = document.querySelector('.reaction')
     let callback = function (entries, observer) {
-      let button = document.querySelector('.basket-rightside-button')
+      let button = document.querySelector('.move-button')
+
       if (entries[0].isIntersecting) {
-        button.classList.remove('move-button')
+        button.classList.remove('move-button_active')
       }
       else {
-        if (entries[0].boundingClientRect.top > 0) button.classList.add('move-button')
+        if (entries[0].boundingClientRect.top > 0) button.classList.add('move-button_active')
       }
     };
     let observer = new IntersectionObserver(callback);
