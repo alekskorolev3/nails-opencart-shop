@@ -356,6 +356,24 @@ textarea {
 
 /* Глобальная корректировка шрифта */
 
+@media screen and (max-width: 9999px) {
+  * {
+    font-size: 0.6vw;
+  }
+}
+
+@media screen and (max-width: 1921px) {
+  * {
+    font-size: 0.7vw;
+  }
+}
+
+@media screen and (max-width: 1712px) {
+  * {
+    font-size: 0.8vw;
+  }
+}
+
 @media screen and (max-width: 1512px) {
   * {
     font-size: 1vw;
