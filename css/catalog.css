@@ -24,7 +24,7 @@
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-    gap: 6px
+    gap: 20px;
 }
 
 .catalog-wrapper__title {
@@ -106,7 +106,7 @@
         align-items: start;
         flex-direction: row;
         position: relative;
-    }    
+    }
 
     .catalog-card:nth-child(odd):nth-child(14n + 3) .catalog-card__img,
     .catalog-card:nth-child(even):nth-child(14n + 12) .catalog-card__img{
@@ -177,7 +177,7 @@
         align-items: start;
         flex-direction: row;
         position: relative;
-    }    
+    }
 
     .catalog-card:nth-child(odd):nth-child(16n + 9) .catalog-card__img,
     .catalog-card:nth-child(even):nth-child(16n + 2) .catalog-card__img{
@@ -244,7 +244,7 @@
         flex-direction: row-reverse;
         position: relative;
         justify-content: flex-start;
-    }    
+    }
 
     .catalog-card:nth-child(12n + 6) .catalog-card__img,
     .catalog-card:nth-child(12n + 10) .catalog-card__img{
@@ -326,7 +326,7 @@
         row-gap: 65px;
         column-gap: 34px;
     }
-    
+
     .catalog-card {
         min-width: 150px;
     }
