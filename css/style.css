@@ -352,7 +352,8 @@ textarea {
   background: none;
   font-size: 1vw;
   line-height: 1em;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Глобальная корректировка шрифта */
