@@ -440,6 +440,10 @@ body::-webkit-scrollbar {
   flex: 1 0 0;
 }
 
+.wrapper-promotion .carousel .card-promotion .card-img {
+  aspect-ratio: 1.527 / 1;
+}
+
 
 .burger div {
   width: 25px;
@@ -1743,7 +1747,7 @@ i:last-child {
   }
 
   .carousel .card-promotion {
-    gap: 6px;
+    gap: 10px;
   }
 
   .card-description__date {
