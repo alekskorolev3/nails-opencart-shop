@@ -961,4 +961,12 @@ hr.noneHR {
   .basket-rightside {
     border-bottom: none;
   }
+
+  .basket-card .card-description__price {
+    margin-right: 0;
+  }
+
+  .basket-btns button:last-child {
+    margin-right: 12px;
+  }
 }
