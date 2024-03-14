@@ -1121,7 +1121,7 @@ i:last-child {
   padding-top: 5px;
 }
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1600px) {
   .main-img img {
     height: 1300px;
   }
@@ -1387,6 +1387,7 @@ i:last-child {
     grid-auto-columns: calc((100% / 2) - 17px);
     gap: 34px;
   }
+
   .wrapper-promotion .carousel .card-promotion .card-img img {
     aspect-ratio: 1.527 / 1;
     width: 100%;
@@ -1395,6 +1396,7 @@ i:last-child {
     max-width: unset;
     max-height: unset;
   }
+
   .wrapper .carousel .card .card-img img {
     aspect-ratio: 1 / 1;
     width: 100%;
@@ -1449,7 +1451,7 @@ i:last-child {
   }
 
   .card-description {
-    padding: 0 12px;
+    padding: 0 15px;
   }
 
   .card-img img {
@@ -1466,7 +1468,7 @@ i:last-child {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     font-size: unset !important;
-    padding: 0 19px 0 6px;
+    padding: 0 6px 0 6px;
     margin: 15px 0;
     justify-content: unset;
   }
@@ -1649,7 +1651,7 @@ i:last-child {
   }
 
   .card-description-inner {
-    gap: 7px;
+    gap: 13px;
   }
 
   .card-description__title {
@@ -1671,7 +1673,7 @@ i:last-child {
     max-width: 66px;
   }
 
-  .card-promotion  {
+  .card-promotion {
     gap: 10px;
   }
 
@@ -1680,7 +1682,7 @@ i:last-child {
     font-size: 19px;
   }
 
-  .card-description-title-container .card-description__title{
+  .card-description-title-container .card-description__title {
     font-size: 17px;
     max-width: unset;
   }
@@ -1712,7 +1714,7 @@ i:last-child {
     gap: 12px;
   }
 
-  .carousel .card .card-description .card-description__title{
+  .carousel .card .card-description .card-description__title {
     text-transform: uppercase;
     font-size: 14px;
     font-family: LT Superior, serif;
