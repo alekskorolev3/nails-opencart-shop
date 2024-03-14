@@ -693,11 +693,12 @@ hr.noneHR {
   }
 
   .card-btns__more:nth-last-of-type(1) {
+    padding-top: 2px;
     margin-left: 0;
     line-height: 12px;
     height: 16px;
     border-radius: 3px;
-    border: 0.5px solid black;
+    border: 1px solid black;
   }
 
 
