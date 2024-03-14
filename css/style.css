@@ -1757,5 +1757,6 @@ i:last-child {
   .card-img {
     /* overflow: unset; */
     max-height: unset;
+    aspect-ratio: 1 / 1;
   }
 }
