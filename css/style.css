@@ -476,7 +476,9 @@ body::-webkit-scrollbar {
 
 .header-logo img {
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  aspect-ratio: 2.764 / 1;
+  object-fit: contain;
 }
 
 .logo-container {
@@ -700,7 +702,7 @@ i:last-child {
 }
 
 .main-section:first-of-type {
-  margin-bottom: 77px;
+  margin-bottom: 72px;
 }
 
 .section-title {
@@ -1313,7 +1315,6 @@ i:last-child {
   }
 }
 
-@media screen and (max-width: 1440px) {}
 
 @media screen and (max-width: 768px) {
 
@@ -1380,17 +1381,33 @@ i:last-child {
 @media screen and (max-width: 480px) {
 
   .wrapper .carousel {
-    grid-auto-columns: 100%;
+    grid-auto-columns: 190px;
+    gap: 34px;
+  }
+  .wrapper-promotion .carousel .card-promotion .card-img img {
+    aspect-ratio: 1.527 / 1;
+    width: 100%;
+    object-fit: cover;
+    min-height: unset;
+    max-width: unset;
+    max-height: unset;
+  }
+  .wrapper .carousel .card .card-img img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: cover;
+    min-height: unset;
+    max-width: unset;
   }
 
   .wrapper-promotion .carousel-promotion {
-    grid-auto-columns: 100% !important;
+    grid-auto-columns: 190px;
   }
 
   .main-section {
     gap: 32px;
-    margin-bottom: 65px;
-    margin-top: 32px;
+    margin-bottom: 85px;
+    margin-top: 54px;
   }
 
   .section-title {
@@ -1604,7 +1621,11 @@ i:last-child {
   }
 
   .main-section {
-    gap: 15px;
+    gap: 26px;
+  }
+
+  .main-section:nth-of-type(2) {
+    gap: 19px;
   }
 
   .social a span img,
@@ -1622,5 +1643,42 @@ i:last-child {
   .addone-info h3 {
     font-weight: normal;
     font-size: 0.93em;
+  }
+
+  .card-description-inner {
+    gap: 7px;
+  }
+
+  .card-description__title {
+    font-size: 14px;
+    order: 2;
+  }
+
+  .card-description__subtitle {
+    font-size: 12px;
+    order: 1;
+  }
+
+  .card-description__price {
+    font-size: 14px;
+  }
+
+  .card-btns__more {
+    font-size: 9px;
+    max-width: 66px;
+  }
+
+  .card-promotion  {
+    gap: 10px;
+  }
+
+  .card-description__date {
+    font-weight: bold;
+    font-size: 19px;
+  }
+
+  .card-description-title-container .card-description__title{
+    font-size: 17px;
+    max-width: unset;
   }
 }

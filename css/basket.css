@@ -605,16 +605,17 @@ hr.noneHR {
   }
 
   .basket-cards {
-    margin-bottom: 29px;
+    margin-bottom: 24px;
   }
 
   .basket-leftside hr {
-    margin: 37px 0 29px;
+    margin: 55px 0 45px;
   }
 
   label.labelRadio input {
-    max-width: 1.25em;
-    height: 1.25em;
+    max-width: 1.5em;
+    min-width: 1.5em;
+    height: 1.5em;
   }
 
   .basket-payment-list input[type='radio'] {
@@ -642,12 +643,12 @@ hr.noneHR {
   }
 
   .basket-card .card-description__title {
-    font-size: 0.77em;
+    font-size: 0.89em;
   }
 
   .basket-card .card-description__category,
   .basket-card .card-description__subtitle {
-    font-size: 0.65em;
+    font-size: 0.75em;
   }
 
   .move-button {
@@ -743,7 +744,7 @@ hr.noneHR {
   }
 
   .basket-rightside-description {
-    padding: 20px 24px 0;
+    padding: 50px 24px 0;
   }
 
   .basket-payment {
@@ -752,11 +753,11 @@ hr.noneHR {
   }
 
   .basket-title {
-    padding: 10px 24px;
+    padding: 10px 12px;
   }
 
   .basket-btns {
-    padding: 0 24px;
+    padding: 0 12px;
   }
 
   .basket-card {
@@ -774,7 +775,7 @@ hr.noneHR {
   }
 
   .basket-delivery {
-    padding: 0 24px;
+    padding: 0 17px;
   }
 
   .basket {
@@ -788,7 +789,7 @@ hr.noneHR {
 
   .basket-promo {
     margin: 0;
-    padding: 0 24px;
+    padding: 0 17px;
   }
 
   .basket-rightside-description {
@@ -796,7 +797,8 @@ hr.noneHR {
   }
 
   .move-button {
-    padding: 10px 12px;
+    height: 53px;
+    padding: 0 25px 0 22px;
   }
 
   .basket-card .card-btns__more {
@@ -804,7 +806,7 @@ hr.noneHR {
   }
 
   .basket-card .card-description__price {
-    font-size: 0.875em;
+    font-size: 0.83em;
   }
 
   .basket-card__IMGcontainer img {
@@ -836,6 +838,7 @@ hr.noneHR {
 
   .basket-btns button {
     font-size: 0.95em;
+    font-weight: 600;
   }
 
   .basket-delivery-form__addone {
@@ -844,13 +847,13 @@ hr.noneHR {
 
   .basket {
     padding-top: 0;
-    padding-bottom: 16px;
+    padding-bottom: 33px;
   }
 
   .basket-cards {
     padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   .basket-card {
@@ -898,5 +901,62 @@ hr.noneHR {
 
   .basket-payment-list li img {
     max-width: 21px;
+  }
+
+  .basket-leftside {
+    padding-top: 0;
+  }
+
+  .basket-card__IMGcontainer {
+    flex: 1 0 0;
+    max-width: 7.37em;
+  }
+
+  .basket-card__IMGcontainer img {
+    aspect-ratio: 1.09 / 1;
+    width: 100%;
+    object-fit: cover;
+    max-width: unset;
+    height: unset;
+    min-width: unset;
+  }
+
+  .basket-card {
+    row-gap: 14px;
+    column-gap: 17px;
+  }
+
+  .card-description {
+    padding: 0;
+  }
+
+  .card-btn__count {
+    font-weight: bold;
+    font-size: 14ox;
+  }
+
+  .basket-card .card-description {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .basket-card .card-description-inner {
+    gap: 7px;
+  }
+
+  .basket-promo form {
+    gap: 11px;
+  }
+
+  .basket-promo form button {
+    font-size: 12px;
+  }
+
+  .basket-rightside__payment span {
+    font-size: 1.3em;
+  }
+
+  .basket-rightside {
+    border-bottom: none;
   }
 }
