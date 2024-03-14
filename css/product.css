@@ -15,7 +15,7 @@
 }
 
 .main-product ~ .main-section {
-  gap: 39px;
+  gap: 26px;
 }
 
 .product-card {
@@ -356,49 +356,8 @@
     font-size: 14px;
   }
 
-  .main-product ~ .main-section  {
-    gap: 22px;
-    align-items: center;
-  }
 
-  .main-product ~ .main-section .section-title {
-    padding: 0;
-  }
 
-  .main-product ~ .main-section .section-title h2{
-    font-size: 22px;
-  }
-
-  .main-product ~ .main-section .card-img img {
-    min-height: 190px;
-    max-height: 190px;
-  }
-
-  .main-product ~ .main-section .wrapper .carousel {
-    grid-auto-columns: 190px;
-    gap: 34px;
-  }
-
-  .main-product ~ .main-section .section-card .card-description__title{
-    font-size: 14px;
-  }
-
-  .main-product ~ .main-section .section-card .card-description__subtitle{
-    font-size: 12px;
-  }
-
-  .main-product ~ .main-section .section-card .card-description__price{
-    font-size: 14px;
-    min-width: max-content;
-  }
-
-  .main-product ~ .main-section  .section-card .card-btns__more{
-    font-size: 12px;
-  }
-
-  .main-product ~ .main-section .card-price-container{
-    gap: 10px;
-  }
 }
 
 @media screen and (max-width: 400px) {

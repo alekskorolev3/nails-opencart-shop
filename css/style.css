@@ -540,7 +540,7 @@ body::-webkit-scrollbar {
 
 .main-img img {
   width: 100%;
-  height: 605px;
+  aspect-ratio: 1 /1.053;
   object-fit: cover;
 }
 
@@ -716,7 +716,7 @@ i:last-child {
 }
 
 .section-title h2 {
-  font-size: min(1.85em, 36px);
+  font-size: min(1.52em, 36px);
   font-weight: 600;
   font-family: "Inter", serif;
 }
@@ -1471,7 +1471,7 @@ i:last-child {
   .slider-elem {
     font-size: 0.8em;
     padding: 0 5px;
-    gap: 4px;
+    gap: 7px;
   }
 
   .header-navbar__list li {
@@ -1680,5 +1680,77 @@ i:last-child {
   .card-description-title-container .card-description__title{
     font-size: 17px;
     max-width: unset;
+  }
+
+  .slider-elem__subtitle {
+    font-size: 11px;
+    font-weight: bold;
+    font-family: "Almarai", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+  }
+
+  .section-title h2 {
+    font-family: Inter, serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .carousel .section-card {
+    gap: 13px;
+  }
+
+  .carousel .section-card .card-description {
+    gap: 12px;
+  }
+
+  .carousel .section-card .card-description {
+    gap: 12px;
+  }
+
+  .carousel .card .card-description .card-description__title{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: LT Superior, serif;
+  }
+
+  .carousel .card:nth-child(even) .card-description {
+    padding-left: 0;
+  }
+
+  .carousel .card:nth-child(odd) .card-description {
+    padding-right: 0;
+  }
+
+  .card-promotion .card-description {
+    padding-left: 17px;
+  }
+
+  .carousel .card-promotion {
+    gap: 6px;
+  }
+
+  .card-description__date {
+    font-family: LT Superior, serif;
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  .carousel .card-promotion .card-description-title-container {
+    gap: 7px;
+  }
+
+  .section-title {
+    padding-left: 17px;
+  }
+
+  .card-btns__more {
+    font-family: Involve, serif;
+  }
+
+  .card-img {
+    /* overflow: unset; */
+    max-height: unset;
   }
 }

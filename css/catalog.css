@@ -11,6 +11,34 @@
     width: 100%;
     max-height: 450px;
     overflow: hidden;
+    position: relative;
+}
+
+
+.main-picture-text {
+    position: absolute;
+    font-size: 19px;
+    font-weight: 700;
+    left: 17px;
+    bottom: 6px;
+    font-family: LT Superior, serif;
+}
+.main-picture-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    top: 10px;
+    left: 18px;
+}
+
+.main-picture-button span {
+    font-size: 16px;
+}
+
+.main-picture-button img{
+    width: 15px;
+    height: 6px;
 }
 
 .catalog-main-picture img {
