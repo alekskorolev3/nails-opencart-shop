@@ -1350,9 +1350,9 @@ i:last-child {
   }
 
 
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
+  /*.wrapper .carousel {*/
+  /*  grid-auto-columns: 100%;*/
+  /*}*/
 
   .wrapper-promotion .carousel-promotion {
     grid-auto-columns: 100% !important;
@@ -1381,7 +1381,7 @@ i:last-child {
 @media screen and (max-width: 480px) {
 
   .wrapper .carousel {
-    grid-auto-columns: 190px;
+    grid-auto-columns: calc((100% / 2) - 17px);
     gap: 34px;
   }
   .wrapper-promotion .carousel .card-promotion .card-img img {
