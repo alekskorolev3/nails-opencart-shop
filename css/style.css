@@ -536,6 +536,8 @@ body::-webkit-scrollbar {
 .main-img {
   width: 100%;
   position: relative;
+  max-height: 605px;
+  overflow: hidden;
 }
 
 .main-img img {
