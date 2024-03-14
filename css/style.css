@@ -631,6 +631,17 @@ i:last-child {
   scroll-snap-align: start;
 }
 
+.card .card-description .card-description__title {
+  font-family: Involve, serif !important;
+  letter-spacing: 1px;
+}
+
+.card-description__subtitle {
+  line-height: 15px;
+}
+
+
+
 
 
 
@@ -692,6 +703,10 @@ i:last-child {
   font-weight: 600;
   font-style: normal;
   text-align: center;
+  font-family: "Almarai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .main-section {
@@ -1651,7 +1666,7 @@ i:last-child {
   }
 
   .card-description-inner {
-    gap: 13px;
+    gap: 10px;
   }
 
   .card-description__title {
@@ -1689,11 +1704,6 @@ i:last-child {
 
   .slider-elem__subtitle {
     font-size: 11px;
-    font-weight: bold;
-    font-family: "Almarai", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    text-transform: uppercase;
   }
 
   .section-title h2 {

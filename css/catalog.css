@@ -58,6 +58,7 @@
 .catalog-wrapper__title {
     align-self: center;
     font-size: 17px;
+    font-family: LT Superior, serif;
 }
 
 .catalog * {
@@ -128,6 +129,10 @@
     height: 21px;
     font-weight: 700;
 
+}
+
+.catalog-card .catalog-card-description__category {
+    font-family: LT Superior, serif;
 }
 
 .catalog button:hover {
@@ -354,11 +359,19 @@
         height: 18.42px;
     }
 
+    .catalog-card .catalog-card-description__category {
+        line-height: 15px;
+    }
+
 
     /* BIG CARD */
     .catalog-card:nth-child(10n + 1) {
         grid-column: span 2;
         gap: 20px;
+    }
+
+    .catalog-card:nth-child(10n + 1) .catalog-card__img {
+        aspect-ratio: 1.15 / 1;
     }
 
     .catalog-card:nth-child(10n + 1) .catalog-card__img img {
@@ -372,11 +385,13 @@
 
     .catalog-card:nth-child(10n + 1) .catalog-card-description__category {
         font-size: 13px;
+        line-height: 17px;
     }
 
     .catalog-card:nth-child(10n + 1) .catalog-card-description__title {
+
         font-size: 20px;
-        margin-top: 1px;
+        margin-top: 9px;
     }
 
     .catalog-card:nth-child(10n + 1) .catalog-card-description__capacity {
