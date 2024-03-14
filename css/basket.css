@@ -704,6 +704,7 @@ hr.noneHR {
 
   .basket-card .card-description {
     margin: 12px 0;
+    padding-top: 10px;
   }
 
   .basket-leftside hr {
@@ -762,11 +763,11 @@ hr.noneHR {
   }
 
   .basket-card {
-    padding: 21px 12px;
+    padding: 30px 12px;
   }
 
   .basket-card__close {
-    top: 21px;
+    top: 46px;
     padding: 0;
   }
 
