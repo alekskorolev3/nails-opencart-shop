@@ -20,7 +20,7 @@
     font-size: 19px;
     font-weight: 700;
     left: 17px;
-    bottom: 6px;
+    bottom: 9px;
     font-family: LT Superior, serif;
 }
 .main-picture-button {
@@ -93,6 +93,7 @@
 }
 .catalog-card-description__category {
     font-size: 12px;
+    font-family: 'Involve', serif;
 }
 .catalog-card-description__capacity {
     font-size: 12px;
@@ -259,9 +260,9 @@
 
 @media screen and (max-width: 768px) {
     .catalog-wrapper {
-        gap: 6px
+        gap: 12px
     }
-    
+
     .catalog {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
@@ -330,7 +331,7 @@
 
     .catalog-card:nth-child(10n + 6) .catalog-card-description__capacity {
         font-size: 15px;
-    } 
+    }
 
     .catalog-card:nth-child(10n + 6) .catalog-card-description-price__value{
         font-size: 19px;
