@@ -637,7 +637,6 @@ i:last-child {
 
 .card .card-description .card-description__title {
   font-family: Involve, serif !important;
-  letter-spacing: 1px;
 }
 
 .card-description__subtitle {
@@ -1441,7 +1440,7 @@ i:last-child {
   }
 
   .header {
-    padding: 0 19.5px 0 17px;
+    padding: 0 17px;
   }
 
   .modal {
@@ -1670,7 +1669,7 @@ i:last-child {
   }
 
   .card-description-inner {
-    gap: 10px;
+    gap: 6px;
   }
 
   .card-description__title {
@@ -1687,6 +1686,8 @@ i:last-child {
 
   .card-description__price {
     font-size: 14px;
+    line-height: 18.62px;
+    font-weight: 700;
   }
 
   .card-btns__more {
@@ -1706,6 +1707,7 @@ i:last-child {
   .card-description-title-container .card-description__title {
     font-size: 17px;
     max-width: unset;
+    line-height: 18.84px;
   }
 
   .slider-elem__subtitle {
@@ -1715,7 +1717,8 @@ i:last-child {
   .section-title h2 {
     font-family: Inter, serif;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 29.05px;
   }
 
   .carousel .section-card {
@@ -1727,12 +1730,14 @@ i:last-child {
   }
 
   .carousel .section-card .card-description {
-    gap: 12px;
+    gap: 10px;
   }
 
   .carousel .card .card-description .card-description__title {
     text-transform: uppercase;
     font-size: 14px;
+    font-weight: 700;
+    line-height: 18.62px;
     font-family: LT Superior, serif;
   }
 
@@ -1755,7 +1760,8 @@ i:last-child {
   .card-description__date {
     font-family: LT Superior, serif;
     font-size: 19px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 19px;
   }
 
   .carousel .card-promotion .card-description-title-container {
@@ -1768,6 +1774,10 @@ i:last-child {
 
   .card-btns__more {
     font-family: Involve, serif;
+    height: 16px;
+    max-width: 66px;
+    line-height: 11.97px;
+    padding: 0;
   }
 
   .card-img {
