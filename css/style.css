@@ -440,6 +440,10 @@ body::-webkit-scrollbar {
   flex: 1 0 0;
 }
 
+.wrapper-promotion .carousel .card-promotion .card-img {
+  aspect-ratio: 1.527 / 1;
+}
+
 
 .burger div {
   width: 25px;
@@ -631,6 +635,17 @@ i:last-child {
   scroll-snap-align: start;
 }
 
+.card .card-description .card-description__title {
+  font-family: Involve, serif !important;
+  letter-spacing: 1px;
+}
+
+.card-description__subtitle {
+  line-height: 15px;
+}
+
+
+
 
 
 
@@ -692,6 +707,10 @@ i:last-child {
   font-weight: 600;
   font-style: normal;
   text-align: center;
+  font-family: "Almarai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 .main-section {
@@ -1121,7 +1140,7 @@ i:last-child {
   padding-top: 5px;
 }
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1600px) {
   .main-img img {
     height: 1300px;
   }
@@ -1387,6 +1406,7 @@ i:last-child {
     grid-auto-columns: calc((100% / 2) - 17px);
     gap: 34px;
   }
+
   .wrapper-promotion .carousel .card-promotion .card-img img {
     aspect-ratio: 1.527 / 1;
     width: 100%;
@@ -1395,6 +1415,7 @@ i:last-child {
     max-width: unset;
     max-height: unset;
   }
+
   .wrapper .carousel .card .card-img img {
     aspect-ratio: 1 / 1;
     width: 100%;
@@ -1449,7 +1470,7 @@ i:last-child {
   }
 
   .card-description {
-    padding: 0 12px;
+    padding: 0 15px;
   }
 
   .card-img img {
@@ -1466,7 +1487,7 @@ i:last-child {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     font-size: unset !important;
-    padding: 0 19px 0 6px;
+    padding: 0 6px 0 6px;
     margin: 15px 0;
     justify-content: unset;
   }
@@ -1649,7 +1670,7 @@ i:last-child {
   }
 
   .card-description-inner {
-    gap: 7px;
+    gap: 10px;
   }
 
   .card-description__title {
@@ -1673,7 +1694,7 @@ i:last-child {
     max-width: 66px;
   }
 
-  .card-promotion  {
+  .card-promotion {
     gap: 10px;
   }
 
@@ -1682,18 +1703,13 @@ i:last-child {
     font-size: 19px;
   }
 
-  .card-description-title-container .card-description__title{
+  .card-description-title-container .card-description__title {
     font-size: 17px;
     max-width: unset;
   }
 
   .slider-elem__subtitle {
     font-size: 11px;
-    font-weight: bold;
-    font-family: "Almarai", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    text-transform: uppercase;
   }
 
   .section-title h2 {
@@ -1714,7 +1730,7 @@ i:last-child {
     gap: 12px;
   }
 
-  .carousel .card .card-description .card-description__title{
+  .carousel .card .card-description .card-description__title {
     text-transform: uppercase;
     font-size: 14px;
     font-family: LT Superior, serif;
@@ -1733,7 +1749,7 @@ i:last-child {
   }
 
   .carousel .card-promotion {
-    gap: 6px;
+    gap: 10px;
   }
 
   .card-description__date {
@@ -1757,6 +1773,7 @@ i:last-child {
   .card-img {
     /* overflow: unset; */
     max-height: unset;
+    aspect-ratio: 1 / 1;
   }
 
   * {
