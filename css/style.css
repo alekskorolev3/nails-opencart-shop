@@ -361,6 +361,7 @@ textarea {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
   -webkit-tap-highlight-color: transparent;
   outline: none !important;
+  user-select: none !important;
 }
 
 /* Глобальная корректировка шрифта */
@@ -1869,5 +1870,6 @@ i:last-child {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
     -webkit-tap-highlight-color: transparent;
     outline: none !important;
+    user-select: none !important;
   }
 }

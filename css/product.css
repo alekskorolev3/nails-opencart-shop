@@ -57,19 +57,23 @@
 .product-card__title {
   font-size: min(2em, 36px);
   font-weight: bold;
-  font-family: 'LT Superior', serif;
+  font-family: Involve, sans-serif;
+  font-weight: 700;
+  line-height: 29px;
 }
 
 .product-card__capacity {
   font-size: 1.25em;
-  font-family: 'LT Superior', serif;
-  letter-spacing: 0.04em;
+  font-family: Involve, sans-serif;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .product-card__price {
   font-size: 2em;
-  font-weight: bold;
-  font-family: 'LT Superior', serif;
+  font-family: Involve;
+  font-weight: 700;
+  line-height: 27px;
 }
 
 .product-card__delivery {
@@ -86,6 +90,9 @@
 
 .product-card__delivery li span {
   font-size: 0.875em;
+  font-family: LT Superior, sans-serif;
+  font-weight: 600;
+  line-height: 16px;
 }
 
 .product-card__delivery img {
@@ -104,6 +111,7 @@
   align-self: flex-start;
   font-size: 0.95em;
   font-weight: bold;
+  font-family: Involve, 'sans-serif';
 }
 
 .product-card__btn:hover {
@@ -152,7 +160,9 @@
 
 .product-description__title {
   font-size: 1.375em;
-  font-weight: bold;
+  font-family: Involve, sans-serif;
+  font-weight: 700;
+  line-height: 27px;
 }
 
 .product-description__specification {
@@ -271,7 +281,7 @@
 
 
   .product-description {
-    padding: 160px 17px 70px;
+    padding: 160px 18px 70px;
   }
 
   .product-card__containerINFO_part:first-child {
@@ -287,6 +297,7 @@
 
   .product-card__delivery {
     gap: 15px;
+    margin-top: 10px 
   }
 
 
@@ -312,15 +323,15 @@
   }
 
   .product-card__capacity {
-    font-size: 0.85em;
+    font-size: 12px;
   }
 
   .product-card__price {
-    font-size: 1.5em;
+    font-size: 20px;
   }
 
   .main-product .product-card__title {
-    font-size: min(1.5em, 22px);
+    font-size: 22px;
   }
 
   .product-card__btn {
@@ -341,7 +352,8 @@
   }
 
   .product-card__containerINFO_part:last-child {
-    top: 200px;
+    top: 198px;
+    gap: 5px;
   }
 
   .product-card__containerIMG img {
@@ -353,8 +365,31 @@
   .product-description__сharacteristics,
   .product-description__rave,
   .product-description__manufacturer {
+    font-family: LT Superior, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .product-card__containerINFO_part:first-child {
+    gap: 4px;
+    top: -5px;
+  }
+
+  .product-card__manager {
+    margin-top: 10px;
+  }
+  .product-card__delivery li span {
     font-size: 14px;
   }
+  .product-description__title {
+    font-size: 20px;
+  }
+
+  .product-description {
+    gap: 14px;
+  }
+
 
 
 
