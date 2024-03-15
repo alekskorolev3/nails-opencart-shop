@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const arrowBtns = document.querySelectorAll(".wrapper-arrow-icon");
   const wrapper = document.querySelector(".wrapper");
 
+
   const firstCard = carousel.querySelector(".card");
   const firstCardWidth = firstCard.offsetWidth;
 
@@ -183,6 +184,19 @@ document.querySelector('.modal-wrapper').addEventListener('click', () => {
     modal.classList.toggle('active')
     modalWrapper.classList.toggle('activeWrapper')
 })
+
+document.querySelector('.modal-wrapper').addEventListener('click', () => {
+  const modal = document.querySelector('.modal')
+  const modalWrapper = document.querySelector('.modal-wrapper')
+  modal.classList.toggle('active')
+  modalWrapper.classList.toggle('activeWrapper')
+})
+
+document.querySelector('.phone-header').addEventListener('click', () => {
+  const modalPhone = document.querySelector(".modal-phone");
+  modalPhone.classList.toggle('modal-phone-active')
+})
+
 
 
 
