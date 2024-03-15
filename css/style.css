@@ -18,6 +18,12 @@
 }
 
 @font-face {
+  font-family: Itim;
+  src: url(../fonts/itim/Itim-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
   font-family: abhayalibre_medium;
   src: url(../fonts/abhay\ libre/abhayalibre_medium.ttf);
   font-weight: 700;

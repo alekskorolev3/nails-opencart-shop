@@ -115,6 +115,11 @@
   font-weight: 500;
 }
 
+.basket-card .card-btns__more:first-child {
+  margin-right: 17px;
+
+}
+
 .card-price-result {
   display: flex;
   margin: 32px 0;
@@ -143,8 +148,8 @@
 
 .basket-card__close {
   position: absolute;
-  top: 55px;
-  right: 10px;
+  top: 44px;
+  right: 11px;
   padding: 5px;
 }
 
@@ -211,10 +216,10 @@
 }
 
 .basket-delivery__title {
-  font-size: 1.625em;
-  font-weight: bold;
-  margin-bottom: 15px;
   font-family: Inter, serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 23px;
 }
 
 .basket-delivery__subitle {
@@ -234,7 +239,7 @@
 }
 
 .delivery-form__blockInput>label {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .delivery-form__blockInput>div {
@@ -494,14 +499,6 @@ label.labelRadio input {
   height: auto;
 }
 
-.basket-leftside hr {
-  margin: 85px 0 85px 20px;
-}
-
-hr.noneHR {
-  margin: 10px 0;
-}
-
 .basket-rightside-button>span:first-child {
   display: none;
 }
@@ -529,6 +526,10 @@ hr.noneHR {
     padding: 40px 0px;
   }
 
+  .basket hr {
+    margin: 0;
+  }
+
   .basket-card {
     flex-wrap: wrap;
     padding: 10px 32px;
@@ -536,7 +537,7 @@ hr.noneHR {
 
   .card-price-result {
     flex: 1 0 60%;
-    margin: 0 0 0 17px;
+    margin: 0 0 0 16px;
   }
 
   .basket hr:not(.basket hr.noneHR) {
@@ -605,11 +606,7 @@ hr.noneHR {
   }
 
   .basket-cards {
-    margin-bottom: 24px;
-  }
-
-  .basket-leftside hr {
-    margin: 55px 0 45px;
+    margin-bottom: 13px;
   }
 
   label.labelRadio input {
@@ -643,12 +640,19 @@ hr.noneHR {
   }
 
   .basket-card .card-description__title {
-    font-size: 0.89em;
+    font-family: Involve, serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
   }
 
   .basket-card .card-description__category,
   .basket-card .card-description__subtitle {
-    font-size: 0.75em;
+    text-transform: uppercase;
+    font-family: LT Superior, serif;
+    font-size: 9px;
+    font-weight: 450;
+    line-height: 11px;
   }
 
   .move-button {
@@ -703,34 +707,42 @@ hr.noneHR {
 
 
   .basket-card .card-description {
-    margin: 12px 0;
-    padding-top: 10px;
+    margin-top: 19px;
+    padding-top: 0;
+    gap: 00;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
-  .basket-leftside hr {
-    margin-left: 0;
-  }
+
 
   .delivery-form__blockInput>label>span,
   .delivery-form__blockInput>div>label>span {
     font-size: 0.75em;
   }
-
-  .basket-promo__title span,
-  .basket-delivery__title {
-    font-size: 1.3em;
-    margin-bottom: 6px;
+  
+  .basket-promo__title span {
+    font-size: 21px;
   }
 
   .basket-payment__title {
-    font-size: 1.3em;
-    margin-bottom: 6px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 23px;
   }
 
+  .basket-delivery__subitle,
+  .basket-delivery__title {
+    padding: 0 8px 0 5px;
+  }
 
   .basket-delivery__subitle {
-    font-size: 0.93em;
-    margin-bottom: 16px;
+    margin-top: 6px;
+    font-family: LT Superior, serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 17px;
+    margin-bottom: 15px;
   }
 
   label.labelRadio>span {
@@ -750,6 +762,7 @@ hr.noneHR {
   }
 
   .basket-payment {
+    margin: 55px 0 13px;
     padding: 0 24px;
     gap: 14px;
   }
@@ -763,7 +776,7 @@ hr.noneHR {
   }
 
   .basket-card {
-    padding: 30px 12px;
+    padding: 27px 12px;
   }
 
   .basket-card__close {
@@ -777,6 +790,7 @@ hr.noneHR {
   }
 
   .basket-delivery {
+    margin: 45px 0 56px;
     padding: 0 17px;
   }
 
@@ -790,8 +804,9 @@ hr.noneHR {
   }
 
   .basket-promo {
-    margin: 0;
+    margin: 45px 0 55px;
     padding: 0 17px;
+    gap: 12px;
   }
 
   .basket-rightside-description {
@@ -804,7 +819,25 @@ hr.noneHR {
   }
 
   .basket-card .card-btns__more {
-    font-size: 0.875em;
+    font-family: Involve, serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    max-width: 30px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .basket-card .card-btn__count {
+    max-width: 27px;
+    height: 19px;
+    font-family: Itim, serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
   }
 
   .basket-card .card-description__price {
@@ -844,7 +877,7 @@ hr.noneHR {
   }
 
   .basket-delivery-form__addone {
-    margin-bottom: 56px;
+    margin-bottom: 44px;
   }
 
   .basket {
@@ -856,6 +889,11 @@ hr.noneHR {
     padding-top: 20px;
     padding-left: 12px;
     padding-right: 12px;
+
+  }
+
+  .basket-card .card-price-container {
+    margin-top: 10px;
   }
 
   .basket-card {
@@ -870,6 +908,14 @@ hr.noneHR {
 
   .basket form input {
     height: 37px;
+    font-family: LT Superior, serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  .basket form input::placeholder {
+    color: #D0CDCD;
   }
 
   .basket-promo form button {
@@ -888,7 +934,10 @@ hr.noneHR {
 
   .basket-delivery-form__addone>span:first-child {
     max-width: 312px;
-    font-size: 0.8em;
+    font-family: LT Superior, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 14px;
   }
 
   .basket-delivery-form button {
@@ -915,17 +964,16 @@ hr.noneHR {
   }
 
   .basket-card__IMGcontainer img {
-    aspect-ratio: 1.09 / 1;
+    aspect-ratio: 1 / 1;
     width: 100%;
     object-fit: cover;
     max-width: unset;
     height: unset;
-    min-width: unset;
   }
 
   .basket-card {
     row-gap: 14px;
-    column-gap: 17px;
+    column-gap: 24px;
   }
 
   .card-description {
@@ -938,12 +986,14 @@ hr.noneHR {
   }
 
   .basket-card .card-description {
-    justify-content: center;
-    gap: 12px;
+    flex: 1 0 0;
+    white-space: normal;
+    max-width: 168px;
   }
 
   .basket-card .card-description-inner {
-    gap: 7px;
+    gap: 6px;
+    white-space: normal;
   }
 
   .basket-promo form {
@@ -964,6 +1014,17 @@ hr.noneHR {
 
   .basket-card .card-description__price {
     margin-right: 0;
+    font-family: Involve, serif;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 17px;
+  }
+
+  .basket-card .card-price-result .card-description__price {
+    font-family: Involve, serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
   }
 
   .basket-btns button:last-child {
