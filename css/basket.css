@@ -707,7 +707,7 @@ label.labelRadio input {
 
 
   .basket-card .card-description {
-    margin-top: 19px;
+    margin: 19px 0 0 0;
     padding-top: 0;
     gap: 00;
     justify-content: flex-start;
@@ -961,6 +961,7 @@ label.labelRadio input {
   .basket-card__IMGcontainer {
     flex: 1 0 0;
     max-width: 7.37em;
+    line-height: 0;
   }
 
   .basket-card__IMGcontainer img {
