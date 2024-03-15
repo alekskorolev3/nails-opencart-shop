@@ -1797,4 +1797,10 @@ i:last-child {
     -webkit-tap-highlight-color: transparent;
     outline: none !important;
   }
+
+  *:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+    -webkit-tap-highlight-color: transparent;
+    outline: none !important;
+  }
 }
