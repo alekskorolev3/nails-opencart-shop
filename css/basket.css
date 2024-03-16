@@ -1,9 +1,9 @@
 .basket {
   display: flex;
   justify-content: space-between;
-  gap: 66px;
+  gap: 46px;
   max-width: 1640px;
-  padding: 59px 100px 0 100px;
+  padding: 58px 82px 0;
   font-family: LT Superior, serif;
 }
 
@@ -43,96 +43,117 @@
   display: flex;
   flex-direction: column;
   padding-top: 28px;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .basket-card {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: minmax(auto, 174px) 1fr;
   position: relative;
   border-top: 1px solid #D9D9D9;
   padding: 24px 0;
 }
 
+.basket-card:last-child {
+  border-bottom: 1px solid #D9D9D9;
+
+}
+
 .basket-card__IMGcontainer {
   flex: 0.2 0 0;
+  grid-row: span 2;
+  aspect-ratio: 1 / 1;
+  max-width: 174px;
+  line-height: 0;
 }
 
 .basket-card__IMGcontainer img {
+  aspect-ratio: 1 /1;
   width: 100%;
-  max-width: 174px;
-  min-width: 174px;
-  height: auto;
+  object-fit: cover;
 }
 
-.basket-card .basket-card-main {
-  flex: 1 0 0;
-}
+.basket-card .basket-card-main {}
 
 .basket-card .card-description {
-  flex: 0.1 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 32px 0;
+  margin-top: 31px;
+  padding: 0 33px;
+  gap: 0;
 }
 
 .basket-card .card-description-inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
-  white-space: nowrap;
+  gap: 20px;
 }
 
-.basket-card .card-description__title,
-.basket-card .card-description__subtitle,
+.basket-card .card-description__title {}
+
 .basket-card .card-description__category {
-  font-family: LT Superior, serif;
-  letter-spacing: 1px;
+  font-family: LT Superior, sans-serif;
+  font-size: 12px;
+  font-weight: 450;
+  line-height: 14px;
+}
+
+.basket-card .card-description__title {
+  font-family: LT Superior, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 19px;
 }
 
 .basket-card .card-price-container {
-  align-self: flex-start;
-  display: flex;
-  justify-content: flex-start;
+  margin-top: 17px;
 }
 
 .basket-card .card-description__price {
-  flex: 1 0 0;
   font-size: 1.25em;
 }
 
 .basket-card .card-btns__more {
-  margin-right: 20px;
   background-color: #D9D9D9;
   border-radius: 5px;
   color: #1119C7;
   font-size: 1.25em;
-  padding: 0;
   width: 1.8em;
   height: 1em;
   font-weight: 500;
 }
 
-.basket-card .card-btns__more:first-child {
-  margin-right: 17px;
+.basket-card .card-btns__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37px;
+  height: 20px;
+}
 
+.basket-card .card-btns__more:first-child {
+  margin-right: 21px;
+}
+
+.basket-card .card-btns__more:nth-child(2) {
+  margin-right: 39px;
 }
 
 .card-price-result {
+  padding-left: 33px;
   display: flex;
-  margin: 32px 0;
-  align-items: flex-end;
-  flex: 1.5 0 0;
+  align-self: flex-end;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .card-price-result .card-description__price {
-  display: flex;
   flex: 1 0 0;
+  display: flex;
   justify-content: flex-end;
   margin-right: 10px;
-  margin-left: 10px;
+  font-family: LT Superior, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  width: 132px;
   min-width: fit-content;
 }
 
@@ -142,16 +163,22 @@
   border-radius: 5px;
   border: 1px solid black;
   color: black;
+  width: 29px;
   height: 21px;
   font-size: 1em;
+  font-family: Itim, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
 }
 
 .basket-card__close {
   position: absolute;
-  top: 44px;
-  right: 11px;
+  top: 18px;
+  right: 27px;
   padding: 5px;
 }
+
 
 .basket-promo {
   display: flex;
@@ -167,9 +194,11 @@
 }
 
 .basket-promo__title span {
-  font-weight: bold;
-  font-size: 1.6em;
+
   font-family: Inter, serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .basket-promo__helper {
@@ -206,7 +235,14 @@
   align-self: stretch;
   max-width: 143px;
   width: 100%;
-  font-family: 'LT Superior', serif;
+  font-family: LT Superior, sans-serif;
+  font-size: 15px;
+  font-weight: 450;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .basket-delivery {
@@ -217,15 +253,19 @@
 
 .basket-delivery__title {
   font-family: Inter, serif;
-  font-size: 21px;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 23px;
+  line-height: 28px;
 }
 
 .basket-delivery__subitle {
-  font-size: 1.25em;
+  margin-top: 14px;
   margin-bottom: 25px;
-  font-weight: 500;
+  font-family: LT Superior, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+
 }
 
 .basket-delivery-form {
@@ -356,13 +396,15 @@ label.labelRadio input {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding-left: 50px;
+  padding-left: 18px;
+  padding: 90px 0 0 18px;
 }
 
 .basket-payment__title {
-  font-size: 1.6em;
-  font-weight: bold;
   font-family: Inter, serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 28px;
 }
 
 .basket-payment-list {
@@ -402,6 +444,7 @@ label.labelRadio input {
 
 .basket-rightside {
   flex: 1 0 0;
+  min-width: 410px;
   max-width: 410px;
   max-height: 415px;
   box-shadow: 1px 1px 8.5px 1px rgba(0, 0, 0, 0.09);
@@ -506,6 +549,20 @@ label.labelRadio input {
 .move-button {
   display: none;
 }
+
+.basket hr {
+  margin: 0;
+  margin-left: 18px;
+}
+
+.basket-promo {
+  padding: 85px 0 85px 18px;
+}
+
+.basket-delivery {
+  padding: 85px 0 85px 18px;
+}
+
 
 @media screen and (min-width: 1600px) {
   .basket {
@@ -719,7 +776,7 @@ label.labelRadio input {
   .delivery-form__blockInput>div>label>span {
     font-size: 0.75em;
   }
-  
+
   .basket-promo__title span {
     font-size: 21px;
   }
@@ -1029,5 +1086,47 @@ label.labelRadio input {
 
   .basket-btns button:last-child {
     margin-right: 12px;
+  }
+
+
+  .basket-card__IMGcontainer {
+    grid-row: 1;
+  }
+
+  .card-price-result {
+    grid-column: span 2;
+    margin: 0;
+  }
+
+  .basket-card {
+    grid-template-columns: auto 1fr;
+    row-gap: 14px;
+    column-gap: 24px;
+  }
+
+  .basket-card .card-description {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .card-price-result {
+    padding-left: 16px
+  }
+
+  .basket-card .card-btns__more:first-child {
+    margin-right: 17px;
+  }
+
+  .basket-card .card-btns__more:nth-child(2) {
+    margin-right: 25px;
+  }
+
+  .basket-card__close {
+    top: 44px;
+    right: 11px;
+  }
+
+  .basket-card .card-price-result .card-description__price {
+    padding-right: 5px;
   }
 }
