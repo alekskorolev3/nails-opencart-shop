@@ -334,7 +334,8 @@
 }
 
 .labelRadio input {
-    width: 23px;
+    max-width: 23px;
+    min-width: 23px;
     height: 23px;
     border: 1px solid #0761E8;
     background-color: #0761E8;
@@ -379,11 +380,17 @@
 }
 
 .basket__phoneContainer {
-    width: 36px;
+    max-width: 36px;
+    min-width: 36px;
     height: 36px;
     background-color: black;
     border-radius: 50%;
     padding: 9px 8px;
+    cursor: pointer;
+}
+
+.basket__phoneContainer:hover {
+    background-color: #B6A8A8;
 }
 
 .basket__phoneContainer img {
@@ -436,7 +443,8 @@
 }
 
 .basket-payment-list li input {
-    width: 23px;
+    max-width: 23px;
+    min-width: 23px;
     height: 23px;
     margin-right: 19px;
 }
@@ -554,7 +562,7 @@
     font-weight: 700;
     line-height: 13px;
     letter-spacing: 0.01em;
-}
+} 
 
 .move-button {
     display: none;
