@@ -193,14 +193,14 @@
       </ul>
     </nav>
   </header>
-  <main class="main" style="align-items: unset;">
+  <main class="main">
     <div class="basket">
       <div class="basket-leftside">
         <div class="basket-title">
           <h2>Корзина</h2>
         </div>
         <div class="basket-btns">
-          <button class="catalog-filter__btn">
+          <button>
             <img src="./img/arrow-left.svg" alt="arrow-left"> вернуться
           </button>
           <button>
@@ -209,35 +209,31 @@
         </div>
         <div class="basket-cards">
           <div class="basket-card">
-            <div class="basket-card__IMGcontainer">
+            <div class="basket-card-container-img">
               <img src="./img/card1.svg" alt="card1">
             </div>
-            <div class="basket-card-main card-description">
-              <div class="card-description-inner">
-                <div class="card-description__category">
-                  МУТАЛЛИЧЕСКАЯ ОСНОВА РАЗМЕР L 180X180ММ СО СМЕННЫМ ФАЙЛОМ
-                </div>
-                <div class="card-description__title">
-                  ART BASE LIGHT GREEN
-                </div>
+            <div class="basket-card-container-main">
+              <div class="basket-card-description__category">
+                МУТАЛЛИЧЕСКАЯ ОСНОВА РАЗМЕР L 180X180ММ СО СМЕННЫМ ФАЙЛОМ
               </div>
-              <div class="card-price-container">
-                <div class="card-description__price">
-                  750.00 руб
-                </div>
+              <div class="basket-card-description__title">
+                ART BASE LIGHT GREEN
+              </div>
+              <div class="basket-card-description__price">
+                750.00 руб
               </div>
             </div>
-            <div class="card-price-result">
-              <button class="card-btns__more">
+            <div class="basket-card-price-container-result">
+              <button class="basket-card-btn">
                 -
               </button>
-              <button class="card-btns__more">
+              <button class="basket-card-btn">
                 +
               </button>
-              <button class="card-btns__more card-btn__count">
+              <button class="basket-card-btn_count">
                 1
               </button>
-              <div class="card-description__price">
+              <div class="basket-card-price__value">
                 750.00 руб
               </div>
             </div>
@@ -246,35 +242,31 @@
             </button>
           </div>
           <div class="basket-card">
-            <div class="basket-card__IMGcontainer">
+            <div class="basket-card-container-img">
               <img src="./img/card1.svg" alt="card1">
             </div>
-            <div class="basket-card-main card-description">
-              <div class="card-description-inner">
-                <div class="card-description__category">
-                  МУТАЛЛИЧЕСКАЯ ОСНОВА РАЗМЕР L 180X180ММ СО СМЕННЫМ ФАЙЛОМ
-                </div>
-                <div class="card-description__title">
-                  ART BASE LIGHT GREEN
-                </div>
+            <div class="basket-card-container-main">
+              <div class="basket-card-description__category">
+                МУТАЛЛИЧЕСКАЯ ОСНОВА РАЗМЕР L 180X180ММ СО СМЕННЫМ ФАЙЛОМ
               </div>
-              <div class="card-price-container">
-                <div class="card-description__price">
-                  750.00 руб
-                </div>
+              <div class="basket-card-description__title">
+                ART BASE LIGHT GREEN
+              </div>
+              <div class="basket-card-description__price">
+                750.00 руб
               </div>
             </div>
-            <div class="card-price-result">
-              <button class="card-btns__more">
+            <div class="basket-card-price-container-result">
+              <button class="basket-card-btn">
                 -
               </button>
-              <button class="card-btns__more">
+              <button class="basket-card-btn">
                 +
               </button>
-              <button class="card-btns__more card-btn__count">
+              <button class="basket-card-btn_count">
                 1
               </button>
-              <div class="card-description__price">
+              <div class="basket-card-price__value">
                 750.00 руб
               </div>
             </div>
@@ -283,35 +275,31 @@
             </button>
           </div>
           <div class="basket-card">
-            <div class="basket-card__IMGcontainer">
+            <div class="basket-card-container-img">
               <img src="./img/card1.svg" alt="card1">
             </div>
-            <div class="basket-card-main card-description">
-              <div class="card-description-inner">
-                <div class="card-description__category">
-                  МУТАЛЛИЧЕСКАЯ ОСНОВА РАЗМЕР L 180X180ММ СО СМЕННЫМ ФАЙЛОМ
-                </div>
-                <div class="card-description__title">
-                  ART BASE LIGHT GREEN
-                </div>
+            <div class="basket-card-container-main">
+              <div class="basket-card-description__category">
+                МУТАЛЛИЧЕСКАЯ ОСНОВА РАЗМЕР L 180X180ММ СО СМЕННЫМ ФАЙЛОМ
               </div>
-              <div class="card-price-container">
-                <div class="card-description__price">
-                  750.00 руб
-                </div>
+              <div class="basket-card-description__title">
+                ART BASE LIGHT GREEN
+              </div>
+              <div class="basket-card-description__price">
+                750.00 руб
               </div>
             </div>
-            <div class="card-price-result">
-              <button class="card-btns__more">
+            <div class="basket-card-price-container-result">
+              <button class="basket-card-btn">
                 -
               </button>
-              <button class="card-btns__more">
+              <button class="basket-card-btn">
                 +
               </button>
-              <button class="card-btns__more card-btn__count">
+              <button class="basket-card-btn_count">
                 1
               </button>
-              <div class="card-description__price">
+              <div class="basket-card-price__value">
                 750.00 руб
               </div>
             </div>
@@ -332,12 +320,11 @@
             <button>Применить</button>
           </form>
         </div>
-        <hr>
         <div class="basket-delivery">
           <div class="basket-delivery__title">Доставка</div>
           <div class="basket-delivery__subitle">Для доставки по России и странам СНГ, заполните форму ниже</div>
           <from action="" class="basket-delivery-form">
-            <div class="delivery-form__blockInput" style="max-width: 537px;">
+            <div class="delivery-form__blockInput">
               <label for="fio">
                 <span>ФИО</span>
                 <input id='fio' name="fio" type="text">
@@ -347,7 +334,7 @@
                 <input id="address" name="address" type="text">
               </label>
               <div>
-                <label for="home" style="max-width: 100px;">
+                <label for="home">
                   <span>Квартира</span>
                   <input id="home" name="home" type="text">
                 </label>
@@ -357,7 +344,7 @@
                 </label>
               </div>
               <div>
-                <label for="tk" style="max-width: 100px; min-width: fit-content;">
+                <label for="tk">
                   <span>Выбрать ТК</span>
                   <select name="tk" id="tk">
                     <option value="СДЕК" selected>СДЕК</option>
@@ -373,18 +360,18 @@
             <div class="delivery-form__blockRadio">
               <label class="labelRadio" for="deliveryChoose">
                 <input type="radio" name="deliveryChoose" id="point">
-                <span>
-                  <span>Доставка до пункта выдачи, только по России и странам СНГ </span><br>
+                <div>
+                  <span>Доставка до пункта выдачи, только по России и странам СНГ </span>
                   <span>мы доставим в ближайший пункт выдачи к указанному адресу, бесплатно, при заказе от 3000
                     руб.</span>
-                </span>
+                </div>
               </label>
               <label class="labelRadio" for="door">
                 <input type="radio" name="deliveryChoose" id="door" checked>
-                <span>
-                  <span>Доставка до двери, только по России и странам СНГ </span><br>
+                <div>
+                  <span>Доставка до двери, только по России и странам СНГ </span>
                   <span>бесплатно, при заказе от 3000 руб.</span>
-                </span>
+                </div>
               </label>
             </div>
             <div class="basket-delivery-form__addone">
@@ -396,7 +383,6 @@
             <button type="submit">Подтвердить данные</button>
           </from>
         </div>
-        <hr>
         <div class="basket-payment">
           <div class="basket-payment__title">Оплата</div>
           <label class="basket-payment-list" for="payment">
@@ -450,7 +436,6 @@
           </div>
           <span class="reaction"></span>
           <div class="basket-rightside-button">
-            <span>2400.00 руб</span>
             <button>
               <span>Оплатить</span><img src="./img/creditCard-white.svg" alt="payment">
             </button>
