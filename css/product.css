@@ -192,11 +192,9 @@
   font-family: LT Superior, sans-serif;
   font-size: 18px;
   font-weight: 450;
-  line-height: 21px;
+  line-height: 22px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-
-  height: 22px;
   margin-bottom: 12px;
 }
 
@@ -242,7 +240,7 @@
 @media screen and (max-width: 1100px) {
   .product {
     padding: 0;
-    gap: 57.05px;
+    gap: 34.05px;
     padding-bottom: 58px;
   }
 
@@ -287,7 +285,7 @@
     line-height: 18.9px;
     text-align: left;
     top: 18.71px;
-    left: 24.23px;
+    left: 26.23px;
   }
 
   .product-card__category {
@@ -380,6 +378,7 @@
     font-weight: 700;
     line-height: 37.24px;
     margin-bottom: 33.41px;
+    letter-spacing: 0.01em;
   }
 
   .product-description__сompound,
@@ -402,7 +401,10 @@
 }
 
 @media screen and (max-width: 480px) {
-
+  .main-product {
+    gap: 28px;
+  }
+  
   .product {
     gap: 70px;
     padding-bottom: 25px;
@@ -411,6 +413,10 @@
   .main-btn_back {
     top: 13.25px;
     left: 17px;
+  }
+
+  .product-card {
+    gap: unset;
   }
 
   .product-card__containerIMG {
@@ -422,6 +428,10 @@
     aspect-ratio: 1.38 / 1;
     width: 100%;
     object-fit: cover;
+  }
+
+  .product-card__containerINFO {
+    padding-left: 17px;
   }
 
 
@@ -439,7 +449,7 @@
   .product-card__category {
     font-size: 14px;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 15px;
   }
 
   .product-card__title {
@@ -461,19 +471,18 @@
     line-height: 27px;
     letter-spacing: 0.01em;
     margin-bottom: 15px;
-    height: 27px;
   }
 
   .product-card__btn {
     position: absolute;
-    top: 36px;
+    top: 33px;
     right: 17px;
     height: 40px;
     margin-bottom: unset;
     max-width: 113px;
     font-size: 10px;
     line-height: 14px;
-    height: 24px;
+    height: 27px;
   }
 
   .product-card__delivery {
@@ -498,11 +507,8 @@
 
   .product-card__delivery li,
   .product-card__manager {
-    gap: 12px;
+    gap: 10px;
   }
-
-
-
 
   .product-card__managerIMG-container {
     padding: 7px 6px;
@@ -510,14 +516,13 @@
 
   .product-description {
     margin-left: unset;
-    padding: 0 17px;
+    padding: 0 24px 0 17px;
   }
 
   .product-description__category {
     font-size: 14px;
     font-weight: 400;
-    line-height: 19px;
-    height: 19px;
+    line-height: 15px;
     margin-bottom: 14px;
   }
 
@@ -526,7 +531,6 @@
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
-    height: 27px;
   }
 
   .product-description__сompound,
