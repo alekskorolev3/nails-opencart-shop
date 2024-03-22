@@ -7,7 +7,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   const carousel = document.querySelector(".carousel");
-  const arrowBtns = document.querySelectorAll(".wrapper-arrow-icon");
+  const arrowBtns = document.querySelectorAll(".navbutton");
   const wrapper = document.querySelector(".wrapper");
 
 
