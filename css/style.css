@@ -1048,12 +1048,13 @@ i:last-child {
 
 .footer_inner_container {
   max-width: 1520px;
-  padding: 48px 67px 28px;
+  padding: 55px 67px 40px;
   display: flex;
   flex-direction: column;
   gap: 39px;
   color: #ffffff;
   width: 100%;
+  border-bottom: 1px solid #B3B3B3;
 }
 
 
@@ -1079,7 +1080,7 @@ i:last-child {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  min-width: 330px;
+  min-width: 370px;
 }
 
 .leftside-part {
@@ -1172,12 +1173,14 @@ i:last-child {
   display: flex;
   gap: 58px;
   flex: 1 0 60%;
+  column-gap: 58px;
+  row-gap: 75px;
 }
 
 .rightside-part {
   display: flex;
   flex-direction: column;
-  gap: 33px;
+  gap: 24px;
   max-width: 274px;
   width: 100%;
 }
@@ -1212,14 +1215,14 @@ i:last-child {
   display: flex;
   flex-direction: column;
   gap: 75px;
-  padding: 17px 57px 107px;
+  padding: 30px 57px 107px;
 
 }
 
 
 .footer-additionally__quickInfo {
   color: #615F5F;
-  font-size: 1em;
+  font-size: 13px;
 }
 
 .footer-additionally-paymentMethods {
@@ -1340,6 +1343,7 @@ i:last-child {
 
   .main-section:first-of-type {
     margin-bottom: 40px!important;
+    gap: 30px;
   }
 
   .carousel-promotion {
@@ -1374,6 +1378,7 @@ i:last-child {
   }
 
   #promotion {
+    margin-top: 0;
     margin-bottom: 120px;
   }
 
@@ -1392,9 +1397,64 @@ i:last-child {
     font-family: Involve, serif;
   }
 
+  .phone-description {
+    font-size: 10px;
+    font-family: Involve, serif;
+  }
+
+  .footer .addone-info {
+    gap: 0;
+  }
+
+  .footer .addone-info h3 {
+    font-size: 19px;
+    line-height: 25px;
+    font-family: Involve, serif;
+    margin-bottom: unset;
+  }
+  .footer .part-title {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Involve, serif;
+  }
+
+  .rightside-part {
+    gap: 24px;
+  }
+
+  .footer .part-link a {
+    font-size: 14px;
+  }
+
+  .footer .footer_inner_container {
+    border-bottom: 1px solid #B3B3B3;
+    padding: 55px 80px 78px;
+  }
+
+  .footer .footer-additionally {
+    padding: 48px 17px;
+  }
+
+  .footer-additionally__quickInfo {
+    font-size: 12px;
+  }
+
+
+}
+
+@media screen and (max-width: 692px) {
+  .footer_inner_container {
+    padding: 46px 12px 78px!important;
+    gap: 20px!important;
+  }
 }
 
 @media screen and (max-width: 568px) {
+
+  .footer-leftside {
+    min-width: unset!important;
+  }
+
   .navbar-socials {
     gap: 20px;
   }
@@ -1450,26 +1510,6 @@ i:last-child {
     padding: 32px;
   }
 
-  /*.main-slider {*/
-  /*  font-size: 0.85em;*/
-  /*  justify-content: unset;*/
-  /*  padding: 24px 32px;*/
-  /*}*/
-
-  /*.carousel {*/
-  /*  margin: 0 32px !important;*/
-  /*}*/
-
-  /*.section-title {*/
-  /*  padding-left: 32px;*/
-  /*  justify-content: flex-start;*/
-  /*}*/
-
-
-  /*.wrapper .carousel {*/
-  /*  grid-auto-columns: 100%;*/
-  /*}*/
-
   .wrapper-promotion .carousel-promotion {
     grid-auto-columns: 100% !important;
   }
@@ -1483,25 +1523,11 @@ i:last-child {
     max-height: 270px!important;
   }
 
-  .card-promotion .card-description-title-container {
-    flex-direction: row-reverse;
-    padding-left: unset!important;
-    padding-right: unset!important;
-  }
 
   .card-promotion .card-description__title {
     font-size: 21px!important;
     line-height: 21px!important;
   }
-
-  .card-promotion .card-description__subtitle {
-    padding-left: 0!important;
-    width: 70%;
-  }
-
-  /*.arrow-container {*/
-  /*  display: none;*/
-  /*}*/
 
   .footer_inner_container {
     padding: 32px;
@@ -1539,8 +1565,10 @@ i:last-child {
 
   .card-description-title-container {
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row-reverse;
     gap: 8px;
+    padding-left: 0!important;
+    padding-right: 0!important;
   }
 
   .footer-additionally {
@@ -1554,6 +1582,14 @@ i:last-child {
 
   .footer-rightside {
     flex-direction: row;
+  }
+
+  .footer-leftside {
+    min-width: unset;
+  }
+
+  .footer .social a span {
+    font-size: 14px;
   }
 }
 
@@ -1664,9 +1700,9 @@ i:last-child {
     padding: 32px 0;
   }
 
-  .footer_inner_container {
-    padding: 12px;
-    gap: 20px;
+  .modal .footer_inner_container {
+    padding: 0!important;
+    border-bottom: none!important;
   }
 
   .navbar-socials {
@@ -1681,6 +1717,8 @@ i:last-child {
 
   .footer-rightside {
     display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     gap: 40px;
     margin-top: 24px;
   }
@@ -1839,6 +1877,8 @@ i:last-child {
     text-transform: uppercase;
     line-height: 10.63px;
     order: 1;
+    padding-left: 0!important;
+    width: 80%!important;
   }
 
   .card-description__price {
@@ -1938,7 +1978,7 @@ i:last-child {
 
   .card-img {
     /* overflow: unset; */
-    max-height: unset;
+    max-height: 190px!important;
     aspect-ratio: 1 / 1;
   }
 
