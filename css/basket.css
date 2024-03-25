@@ -3,9 +3,11 @@
     gap: 45px;
     max-width: 1512px;
     padding: 58px 82px 169.26px 64px;
+    width: 100%;
 }
 
 .basket-leftside {
+    flex: 1 0 0;
 }
 
 .basket-title {
@@ -17,7 +19,8 @@
     font-family: jsMath-cmbx10, sans-serif;
     font-size: 25px;
     font-weight: 700;
-    line-height: 27px;
+    line-height: 25px;
+
 }
 .basket-btns {
     margin-bottom: 26px;
@@ -33,6 +36,12 @@
     font-weight: 600;
     line-height: 19px;
     height: 20px;
+}
+
+.basket-btns button:last-child {
+    margin-right: 5px;
+    width: 107px;
+    text-align: left;    
 }
 
 .basket-cards {
@@ -80,7 +89,7 @@
     font-family: Involve, sans-serif;
     font-size: 19px;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 22px;
     letter-spacing: 0.07em;
     margin-bottom: 14px;
 }
@@ -165,6 +174,7 @@
     height: auto;
 }
 .basket-promo {
+    margin-left: 18px;
     padding: 85px 0 85px 39px;
     display: flex;
     border-bottom: 1px solid #EAE9E9;
@@ -172,9 +182,10 @@
 
 .basket-promo__title {
     display: flex;
-    gap: 4px;
+    gap: 15px;
     margin-right: 18.52px;
     align-items: center;
+    align-self: flex-start;
 }
 .basket-promo__title span{
     font-family: jsMath-cmbx10, sans-serif;
@@ -233,7 +244,8 @@
 
 
 .basket-delivery {
-    padding: 85px 0 85px 39px;
+    padding: 85px 0 85px 36px;
+    margin-left: 18px;
     border-bottom: 1px solid #EAE9E9;
 }
 .basket-delivery__title {
@@ -243,6 +255,7 @@
     line-height: 28px;
     height: 25px;
     margin-bottom: 14px;
+    margin-left: 3px;
 }
 .basket-delivery__subitle {
     font-family: LT Superior, sans-serif;
@@ -257,7 +270,7 @@
 .delivery-form__blockInput {
     max-width: 531px;
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
 }
 
 .delivery-form__blockInput label {
@@ -273,6 +286,8 @@
     font-weight: 450;
     line-height: 19px;
     letter-spacing: 0.01em;
+    margin-left: 3px;
+
 }
 
 .delivery-form__blockInput > div {
@@ -370,7 +385,7 @@
     font-family: LT Superior, sans-serif;
     font-size: 20px;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 23px;
     letter-spacing: 0.01em;
 }
 
@@ -406,7 +421,7 @@
     font-weight: 600;
     line-height: 18px;
     letter-spacing: 0.01em;
-    margin: 0 170px 0 auto;
+    margin: 0 295px 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,8 +431,9 @@
 .basket-payment {
     padding: 90px 0 0 37px;
     display: flex;
-    flex-direction: column
-    ;gap: 40px;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 18px;
 }
 .basket-payment__title {
     font-family: jsMath-cmbx10, sans-serif;
@@ -565,8 +581,8 @@
 
 @media screen and (max-width: 1100px) {
     .basket {
-        padding: 38px 0px 123px 0px;
-        gap: 30px;
+        padding: 38px 25px 123px 0px;
+        gap: 33px;
     }
 
     .basket-title {
@@ -578,6 +594,7 @@
     .basket-btns {
         padding-left: 25px;
         margin-bottom: 23px;
+        height: unset;
     }
 
     .basket-btns button:first-child {
@@ -590,6 +607,10 @@
         font-size: 15px;
         font-weight: 600;
         line-height: 16.62px;
+        width: 96px;
+        height: 20px;
+        margin: unset;
+        transform: translateX(3px);
     }
 
     .basket-cards {
@@ -673,11 +694,11 @@
     }
 
     .basket-card-price__value {
-        margin-right: 0;
         font-size: 14px;
         font-weight: 700;
         line-height: 14px;
         letter-spacing: 0.01em;
+        margin-right: 5px;
     }
 
     .basket-card:last-child {
@@ -686,8 +707,8 @@
     }
 
     .basket-card__close {
-        top: 15px;
-        right: 22.07px;
+        top: 13px;
+        right: 16.07px;
         max-width: 10px;
         min-width: 10px;
         height: 19px;
@@ -699,7 +720,6 @@
         border-radius: 15px;
         padding: 25px 10.58px 44.14px 11px; 
         height: 264px;
-        margin-right: 25px;
     }
 
     .basket-rightside__payment {
@@ -750,6 +770,10 @@
     .basket-rightside__deliveryDoor {
         margin-bottom: 33.33px;
     }
+    
+    .basket-rightside-button {
+        margin: 0 19.22px 0 auto;;
+    }
 
     .basket-rightside-button button {
         max-width: 182.9px;
@@ -774,6 +798,7 @@
         gap: 12px;
         padding: 50px 24px 52px;
         border-bottom-width: 21px;
+        margin-left: unset;
     }
 
     .basket-promo form {
@@ -783,6 +808,8 @@
     .basket-promo__title {
         gap: 10px;
         margin-right: unset;
+        height: 25px;
+
     }
 
     .basket-promo__helper {
@@ -819,6 +846,7 @@
     .basket-delivery {
         padding: 45px 19px 50px 24px;
         border-bottom-width: 21px;
+        margin-left: unset;
     }
 
     .basket-delivery__title {
@@ -834,6 +862,7 @@
         line-height: 17px;
         letter-spacing: 0.01em;
         margin-bottom: 32px;
+        max-width: 461px;
     }
 
     .delivery-form__blockInput label span {
@@ -861,6 +890,7 @@
 
     .delivery-form__blockInput {
         margin-bottom: 16px;
+        margin-left: 2px;
     }
 
     .labelRadio span:first-child {
@@ -879,11 +909,13 @@
 
     .delivery-form__blockRadio {
         margin-bottom: 26px;
+        margin-left: 7px;
     }
 
     .basket-delivery-form__addone {
         gap: 37px;
         margin-bottom: 44px;
+        align-items: center;
     }
 
     .basket-delivery-form__addone span:first-child {
@@ -892,6 +924,12 @@
         line-height: 14px;
         letter-spacing: 0.01em;
         max-width: 379px;
+        margin-left: 10px;
+    }
+
+    .labelRadio > div {
+        height: unset;
+        max-width: 384px;
     }
     
     .basket-delivery button {
@@ -901,7 +939,7 @@
         font-weight: 450;
         line-height: 15.35px;
         letter-spacing: 0.01em;
-        margin: 0 101px 0 auto;
+        margin: 0 82px 0 auto;
     }
     .basket-payment {
         padding: 50px 25px 0;
@@ -909,6 +947,7 @@
         font-weight: 700;
         line-height: 25px;
         gap: 14px;
+        margin-left: unset;
     }
 
     .basket-payment__title {
@@ -919,6 +958,7 @@
 
     .basket-payment-list ul {
         gap: 24px;
+        margin-left: 6px;
     }
 
     .basket-payment-list li input {
@@ -963,6 +1003,10 @@
         gap: 0;
     }
 
+    .basket-btns button:last-child {
+        width: 87px;
+    }
+
     .basket-title {
         padding-top: unset;
         padding-left: 17px;
@@ -988,7 +1032,7 @@
 
     .basket-card {
         padding: 27px 0;
-        row-gap: 14px;
+        row-gap: 13px;
         column-gap: 24px;
         grid-template-columns: auto 1fr;
         grid-template-rows: auto auto;
@@ -1010,6 +1054,7 @@
 
     .basket-card-price-container-result {
         grid-column: span 2;
+        padding-left: 16px;
     }
 
     .basket-card-container-main {
@@ -1153,17 +1198,20 @@
 
     .delivery-form__blockInput > div:last-of-type > label:first-child {
         max-width: 92px;
-        margin-right: 27px;
+        margin-right: 21px;
         width: 100%;
     }
 
     .delivery-form__blockInput {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
+        margin-left: unset;
+
     }
 
     .delivery-form__blockRadio {
         gap: 16px;
         margin-bottom: 25px;
+        margin-left: 4px;
     }
 
     .labelRadio input {
@@ -1214,7 +1262,8 @@
     }
 
     .basket-payment-list ul {
-        gap: 20px;
+        gap: 24px;
+        margin-left: 3px;
     }
 
     .basket-payment-list li input {
@@ -1263,6 +1312,10 @@
         margin-bottom: 19px;
     }
 
+    .basket-rightside-button {
+        margin: 0 auto;
+    }
+
     .basket-rightside-button button {
         max-width: 283px;
         height: 37px;
@@ -1300,6 +1353,10 @@
 
     .basket-rightside-property {
         margin-bottom: 16px;
+    }
+
+    .basket-rightside__deliveryPoint {
+        margin-bottom: 9px;
     }
 
     .basket-rightside__deliveryPoint button, .basket-rightside__deliveryDoor button {
