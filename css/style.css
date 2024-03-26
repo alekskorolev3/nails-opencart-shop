@@ -1290,6 +1290,14 @@ i:last-child {
     gap: 50px;
   }
 
+  .header {
+    padding: 0 30px 0 30px;
+  }
+
+  .header-navbar__list {
+    gap: 20px;
+  }
+
   .card-description {
     gap: 10px;
   }
@@ -1448,7 +1456,15 @@ i:last-child {
 
   .footer .footer_inner_container {
     border-bottom: 1px solid #B3B3B3;
-    padding: 55px 80px 78px;
+    padding: 58px 80px 75px;
+  }
+
+  .navbar-phone {
+    margin-bottom: 2px;
+  }
+
+  .leftside-part {
+    gap: 22px;
   }
 
   .footer .footer-additionally {
