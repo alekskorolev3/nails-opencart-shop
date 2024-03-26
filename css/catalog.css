@@ -397,6 +397,7 @@
 
   .catalog-main-slider {
     padding: 0 8px;
+    border-bottom: none;
   }
 
   .catalog-wrapper {
