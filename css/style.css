@@ -1558,7 +1558,7 @@ i:last-child {
   }
 
   #promotion {
-    margin-bottom: 100px;
+    margin-bottom: 100px!important;
   }
 
   /*.card .card-img {*/
@@ -1854,7 +1854,7 @@ i:last-child {
   }
 
   .header-navbar__list li:nth-child(3) {
-    width: 18px;
+    width: 24px;
   }
 
   .header-navbar__list li a {
