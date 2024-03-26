@@ -506,6 +506,10 @@ body::-webkit-scrollbar {
   max-width: 112px;
 }
 
+.logo-container a {
+  display: flex;
+}
+
 .header-navbar {
   flex: 1 0 0;
   display: flex;
@@ -635,7 +639,7 @@ body::-webkit-scrollbar {
 .main-slider {
   overflow: auto hidden;
   display: flex;
-  padding: 20px 50px;
+  padding: 25px 50px;
   justify-content: center;
   font-size: 0.85em;
   width: 100%;
@@ -740,7 +744,7 @@ i:last-child {
   transition: all 0.2s linear;
   font-size: 1em;
   padding: 0 8px;
-  gap: 10px
+  gap: 8px;
 }
 
 .slider-elem:hover .slider-elem__container img {
@@ -795,15 +799,15 @@ i:last-child {
 .main-section {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
   margin-bottom: 62px;
-  margin-top: 23px;
+  margin-top: 19px;
   max-width: 1520px;
   width: 100%;
 }
 
 .main-section:first-of-type {
-  margin-bottom: 152px;
+  margin-bottom: 155px;
 }
 
 .section-title {
@@ -835,7 +839,7 @@ i:last-child {
   flex-direction: column;
   flex: 1 0 0;
   align-self: flex-start;
-  gap: 12px;
+  gap: 15px;
   align-items: flex-start;
   cursor: pointer;
   font-family: "LT Superior", serif;
@@ -949,10 +953,11 @@ i:last-child {
   font-size: 31px;
   font-family: "Involve", sans-serif;
   line-height: 1;
+  letter-spacing: 0.07em;
 }
 
 .card-promotion .card-description {
-  gap: 4px;
+  gap: 8px;
 }
 
 .card-promotion .card-img {
@@ -972,7 +977,7 @@ i:last-child {
 
 .card-description-inner {
   display: flex;
-  gap: 15px;
+  gap: 9px;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -999,7 +1004,7 @@ i:last-child {
   font-family: "Malgun Gothic", sans-serif;
   font-size: 18px;
   line-height: unset;
-  letter-spacing: unset;
+  letter-spacing: 0.01em;
 }
 
 .card-promotion .card-description__date {
@@ -1012,7 +1017,7 @@ i:last-child {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1.12px;
-  line-height: 12px;
+  line-height: 15.52px;
 }
 
 .card-description__subtitle span {
@@ -1048,7 +1053,7 @@ i:last-child {
 
 .footer_inner_container {
   max-width: 1520px;
-  padding: 55px 67px 40px;
+  padding: 49px 70px 37px;
   display: flex;
   flex-direction: column;
   gap: 39px;
@@ -1096,6 +1101,7 @@ i:last-child {
 .navbar-phone a {
   font-size: 1.18em;
   font-weight: bold;
+  font-family: Involve, serif;
 }
 
 .navbar-phone {
@@ -1275,12 +1281,16 @@ i:last-child {
     gap: 50px;
   }
 
+  .card-description {
+    gap: 10px;
+  }
+
   .main-img {
     max-height: 354px;
   }
   .main-slider {
     justify-content: flex-start;
-    padding: 20px 4px;
+    padding: 23px 4px;
   }
 
   .slider-elem {
@@ -1295,6 +1305,8 @@ i:last-child {
 
   .section-title h2{
     font-size: 24px;
+    font-family: Inter, serif;
+    line-height: 29.05px;
   }
 
   .arrow-container {
@@ -1307,7 +1319,7 @@ i:last-child {
     grid-auto-columns: 180px!important;
   }
 
-  .carousel .card-img {
+  .main-slider ~ .main-section .wrapper .carousel .card-img {
     max-height: 180px;
   }
 
@@ -1323,11 +1335,13 @@ i:last-child {
   .card-description__subtitle {
     font-size: 9px;
     letter-spacing: 0.16px;
+    line-height: 10.63px;
   }
 
   .card-description__title {
     font-size: 14px;
     letter-spacing: 0.16px;
+    line-height: 18.62px;
   }
 
   .card-description__price {
@@ -1339,11 +1353,13 @@ i:last-child {
     font-size: 9px;
     padding: 3px 10px;
     width: unset!important;
+    margin-right: 5px;
   }
 
   .main-section:first-of-type {
-    margin-bottom: 40px!important;
-    gap: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    gap: 22px;
   }
 
   .carousel-promotion {
@@ -1379,7 +1395,7 @@ i:last-child {
 
   #promotion {
     margin-top: 0;
-    margin-bottom: 120px;
+    margin-bottom: 97px;
   }
 
   .footer-rightside {
@@ -1387,14 +1403,9 @@ i:last-child {
     grid-template-columns: 1.4fr 1fr;
   }
 
-  .carousel .card:first-child .card-description {
-    padding: 0 15px;
-  }
-
   .navbar-phone a {
     font-size: 19px;
     line-height: 25px;
-    font-family: Involve, serif;
   }
 
   .phone-description {
@@ -1554,6 +1565,10 @@ i:last-child {
 @media screen and (max-width: 480px) {
 
 
+  .carousel .card:first-child .card-description {
+    padding: 0 15px;
+  }
+
   .card-description {
     display: flex;
     flex-direction: column;
@@ -1623,9 +1638,9 @@ i:last-child {
   }
 
   .main-section {
-    gap: 32px;
-    margin-bottom: 85px;
-    margin-top: 54px;
+    gap: 20px!important;
+    margin-bottom: 5px!important;
+    margin-top: 50px!important;
   }
 
   .section-title {

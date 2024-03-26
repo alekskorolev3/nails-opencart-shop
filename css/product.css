@@ -8,6 +8,16 @@
   width: 100%;
 }
 
+.main-product ~ .main-section .section-title h2 {
+  font-size: 32px;
+  width: 273px;
+  text-align: left;
+}
+
+.main-product ~ .main-section {
+  gap: 37px;
+}
+
 .main-product {
   display: flex;
   flex-direction: column;
@@ -51,7 +61,7 @@
   transform: translateX(-107px);
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 24px;
 }
 
 .product-card__containerINFO_part:first-child {
@@ -73,7 +83,7 @@
   font-family: Involve, sans-serif;
   font-size: 36px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 48px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
@@ -249,10 +259,31 @@
 }
 
 @media screen and (max-width: 1100px) {
+
+
+  .main-product ~ .main-section .section-title {
+    padding-left: 96px;
+  }
+
+  .main-product ~ .main-section .section-title h2{
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    font-family: Inter, serif;
+    line-height: 22px;
+  }
+
+  .main-product ~ .main-section {
+    gap: 34px;
+  }
+
   .product {
     padding: 0;
     gap: 34.05px;
     padding-bottom: 58px;
+  }
+
+  .product-card__delivery li:last-child {
+    gap: 21.97px;
   }
 
   .main-product {
@@ -327,7 +358,8 @@
     letter-spacing: 0.01em;
     margin-bottom: 17.08px;
     padding-left: 1.23px;
-    
+    font-family: Involve, serif;
+
   }
 
   .product-card__price {
@@ -349,7 +381,7 @@
     font-size: 13px;
     font-weight: 700;
     line-height: 17.29px;
-
+    font-family: Involve, serif;
   }
 
   .product-card__delivery {
@@ -401,7 +433,7 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 37px;
-    margin-bottom: 33.41px;
+    margin-bottom: 31px;
     letter-spacing: 0.01em;
     margin-left: 4.97px;
   }
@@ -416,7 +448,7 @@
     font-size: 13px;
     font-weight: 400;
     line-height: 15.51px;
-    margin-bottom: 22px;
+    margin-bottom: 21px;
 
   }
 
@@ -453,7 +485,20 @@
   .main-product {
     gap: 28px;
   }
-  
+
+  .main-product ~ .main-section .section-title  {
+    padding-left: unset;
+    justify-content: center;
+  }
+
+  .main-product ~ .main-section .section-title h2 {
+    font-size: 22px;
+    line-height: 24.38px;
+    font-weight: 600;
+    font-family: "LT Superior", serif;
+    width: unset;
+  }
+
   .product {
     gap: 70px;
     padding-bottom: 25px;
@@ -604,8 +649,8 @@
   .product-description__rave,
   .product-description__specification,
   .product-description__manufacturer {
-    font-size: 13px;
-    line-height: 16.5px;
+    font-size: 14px;
+    line-height: 15.51px;
     margin-bottom: 15px;
     margin-left: 0;
   }

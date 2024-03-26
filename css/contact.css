@@ -11,7 +11,7 @@
     margin-bottom: 53px;
 }
 .contact-body {
-    height: 254px;
+    height: 283px;
 }
 .contact-body__title {
     font-family: LT Superior, sans-serif;
@@ -39,12 +39,12 @@
 .contact-bottom ul {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
 }
 
 .contact-body-text li {
     display: flex;
-    width: 150px;
+    width: 140px;
     justify-content: space-between;
     align-items: center;
 }
@@ -52,9 +52,16 @@
 .contact-body__info li {
     display: flex;
     width: 100%;
-    max-width: 600px;
+    max-width: 518px;
     justify-content: space-between;
     gap: 5px;
+}
+
+.contact-body-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 5px;
 }
 
 .contact-body__info li span:nth-child(2) {
@@ -88,7 +95,6 @@
     justify-content: flex-start;
     align-items: center;
     gap: 14px;
-    margin-bottom: 9px;
 }
 
 .contact-bottom .link:last-child {
@@ -108,10 +114,15 @@
     line-height: 20.57px;
 }
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1100px) {
     .main-contact {
-        padding: 38px 25px 120px;
+        padding: 45px 25px 120px;
     }
+
+  .contact-title {
+    margin-bottom: 31px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -124,11 +135,15 @@
     }
 
     .contact-bottom__title {
-        padding-top: 30px;
+        padding-top: 36px;
     }
 
     .contact-body {
         height: unset;
+    }
+
+    .contact-body-text>div {
+      line-height: 20px;
     }
 }
 

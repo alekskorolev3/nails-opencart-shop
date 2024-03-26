@@ -41,7 +41,7 @@
 .basket-btns button:last-child {
     margin-right: 5px;
     width: 107px;
-    text-align: left;    
+    text-align: left;
 }
 
 .basket-cards {
@@ -573,7 +573,7 @@
     font-weight: 700;
     line-height: 13px;
     letter-spacing: 0.01em;
-} 
+}
 
 .move-button {
     display: none;
@@ -581,7 +581,7 @@
 
 @media screen and (max-width: 1100px) {
     .basket {
-        padding: 38px 25px 123px 0px;
+        padding: 38px 25px 116px 0px;
         gap: 33px;
     }
 
@@ -718,7 +718,7 @@
         max-width: 248px;
         min-width: 248px;
         border-radius: 15px;
-        padding: 25px 10.58px 44.14px 11px; 
+        padding: 25px 10.58px 44.14px 11px;
         height: 264px;
     }
 
@@ -738,7 +738,7 @@
         font-weight: 700;
         line-height: 10px;
         letter-spacing: 0.01em;
-    } 
+    }
 
     .basket-rightside-property {
         margin-bottom: 10px;
@@ -770,7 +770,7 @@
     .basket-rightside__deliveryDoor {
         margin-bottom: 33.33px;
     }
-    
+
     .basket-rightside-button {
         margin: 0 19.22px 0 auto;;
     }
@@ -862,7 +862,7 @@
         line-height: 17px;
         letter-spacing: 0.01em;
         margin-bottom: 32px;
-        max-width: 461px;
+        max-width: 458px;
     }
 
     .delivery-form__blockInput label span {
@@ -931,7 +931,7 @@
         height: unset;
         max-width: 384px;
     }
-    
+
     .basket-delivery button {
         height: 37px;
         max-width: 283px;
@@ -1011,7 +1011,7 @@
         padding-top: unset;
         padding-left: 17px;
         padding-bottom: 10px;
-    }   
+    }
 
     .basket-btns {
         padding-left: 17px;
@@ -1231,7 +1231,7 @@
 
     .labelRadio span:last-child {
         font-size: 10px;
-        line-height: 11px;        
+        line-height: 11px;
     }
 
     .basket-delivery-form__addone {
@@ -1374,7 +1374,7 @@
         margin-bottom: 9px;
     }
 
-    .move-button {
+    .move-button_active{
         display: flex;
         height: 53px;
         justify-content: space-between;
@@ -1410,7 +1410,7 @@
         letter-spacing: 0.01em;
         color: #299F3E
     }
-    
+
 
     .move-button-active {
         display: flex;
