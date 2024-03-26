@@ -441,7 +441,7 @@ body::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 35px 0 35px;
+  padding: 0 50.31px 0 35px;
   position: sticky;
   top: 0;
   height: 46px;
@@ -538,7 +538,7 @@ body::-webkit-scrollbar {
 }
 
 .header-navbar__list li:nth-child(3) {
-  width: 15.67px;
+  width: 24px;
 }
 
 .header-navbar__list li img {
@@ -657,6 +657,10 @@ body::-webkit-scrollbar {
   gap: 5px;
   position: absolute;
   right: 60px;
+}
+
+.arrow-container img {
+  pointer-events: unset;
 }
 
 .wrapper-arrow-icon,
@@ -1192,6 +1196,7 @@ i:last-child {
 }
 
 .part-title {
+  font-family: Involve, serif;
   font-weight: bolder;
   font-size: 1.125em;
 }
@@ -1262,6 +1267,10 @@ i:last-child {
 .footer-additionally-paymentMethods__elem:nth-child(4) {
   max-width: 5em;
   padding-top: 5px;
+}
+
+.modal .footer .navbar-socials {
+  gap: 20px;
 }
 
 @media screen and (min-width: 1920px) {
@@ -1763,9 +1772,13 @@ i:last-child {
     padding: 0;
   }
 
+
+
   .modal-list {
     margin-bottom: 0;
   }
+
+
 
   .modal .navbar-socials,
   .modal .navbar-socials span {
@@ -2107,6 +2120,7 @@ i:last-child {
 
 .modal .footer .footer_inner_container {
   padding: 0;
+  border-bottom: unset;
 }
 
 .modal .footer .navbar-phone a {
