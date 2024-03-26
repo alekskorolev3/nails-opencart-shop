@@ -1089,7 +1089,7 @@ i:last-child {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  min-width: 370px;
+  min-width: 347px;
 }
 
 .leftside-part {
@@ -1184,7 +1184,7 @@ i:last-child {
   gap: 58px;
   flex: 1 0 60%;
   column-gap: 58px;
-  row-gap: 75px;
+  row-gap: 70px;
 }
 
 .rightside-part {
