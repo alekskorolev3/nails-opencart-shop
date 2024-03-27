@@ -1056,7 +1056,6 @@ i:last-child {
 }
 
 .footer_inner_container {
-  max-width: 1520px;
   padding: 49px 70px 37px;
   display: flex;
   flex-direction: column;
