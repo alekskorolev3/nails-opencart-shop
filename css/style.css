@@ -472,7 +472,7 @@ body::-webkit-scrollbar {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(45deg) translate(4px, 4px);
 }
 
 .toggle .line2 {
@@ -480,7 +480,7 @@ body::-webkit-scrollbar {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -4px);
+  transform: rotate(-45deg) translate(4px, -4px);
 }
 
 .header-logo {
