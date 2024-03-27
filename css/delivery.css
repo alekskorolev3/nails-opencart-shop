@@ -131,7 +131,7 @@
     .main-delivery-container-imgs {
         height: unset;
         margin-bottom: 22px;
-        gap: 30px;
+        gap: 30px !important;
     }
 
     .main-delivery .main-delivery-container-imgs .main-delivery-img img{

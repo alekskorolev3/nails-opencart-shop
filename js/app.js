@@ -192,10 +192,19 @@ document.querySelector('.modal-wrapper').addEventListener('click', () => {
   modalWrapper.classList.toggle('activeWrapper')
 })
 
-document.querySelector('.phone-header').addEventListener('click', () => {
+document.addEventListener('click', (e) => {
+  if (e.target !== document.querySelector(".modal-phone")) document.querySelector(".modal-phone").classList.remove('modal-phone-active')
+})
+
+document.querySelector('.modal-phone-inner').addEventListener('click', (e) => e.stopPropagation())
+
+document.querySelector('.phone-header').addEventListener('click', (e) => {
+  e.stopPropagation()
   const modalPhone = document.querySelector(".modal-phone");
   modalPhone.classList.toggle('modal-phone-active')
 })
+
+
 
 
 
