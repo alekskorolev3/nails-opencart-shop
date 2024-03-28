@@ -185,13 +185,6 @@ document.querySelector('.modal-wrapper').addEventListener('click', () => {
     modalWrapper.classList.toggle('activeWrapper')
 })
 
-document.querySelector('.modal-wrapper').addEventListener('click', () => {
-  const modal = document.querySelector('.modal')
-  const modalWrapper = document.querySelector('.modal-wrapper')
-  modal.classList.toggle('active')
-  modalWrapper.classList.toggle('activeWrapper')
-})
-
 document.addEventListener('click', (e) => {
   if (e.target !== document.querySelector(".modal-phone")) document.querySelector(".modal-phone").classList.remove('modal-phone-active')
 })
