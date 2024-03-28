@@ -1687,12 +1687,15 @@ i:last-child {
   }
 
   .toggle .line1 {
-    transform: rotate(-45deg) translate(-4px, 5px);
+    transform: rotate(45deg) translate(4px, 4px);
   }
 
   .toggle .line3 {
-    transform: rotate(45deg) translate(-4px, -5px);
+    transform: rotate(-45deg) translate(4px, -4px);
   }
+
+  
+
 
   .arrow-container {
     display: none;
